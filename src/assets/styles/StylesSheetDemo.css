@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.style-sheet-demo {
+    flex-basis: auto;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: blue;
+    border-color: blue;
+    border-width: 1px;
+    border-style: solid;
+}

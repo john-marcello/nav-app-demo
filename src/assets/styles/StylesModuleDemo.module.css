@@ -1,0 +1,15 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.moduleDemo {
+    flex-basis: auto;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: green;
+    border-color: green;
+    border-width: 1px;
+    border-style: solid;
+}
