@@ -1,13 +1,14 @@
 import React from "react";
 
+// renders the home page
 function Home() {
     return (
         <>
             <h1>Home Page</h1>
 
-            <div class='align-center is-hero'>
+            <div className='align-center is-hero'>
                 <img
-                    class='hero_cash emoji_parallax'
+                    className='hero_cash emoji_parallax'
                     src='https://assets-global.website-files.com/64b5f8bfc12b3ec8aef889d7/64deafcd3f4453c7e7362ef7_money-bag-hero.png'
                     alt='money bag emoji'
                     sizes='(max-width: 479px) 100vw, (max-width: 767px) 19vw, (max-width: 991px) 12vw, 14vw'
@@ -17,10 +18,10 @@ function Home() {
                 />s
                 <h1>
                     get your first <span class='block'>deposit matched</span> up
-                    to <span class='dollar_sign'>$</span>
-                    <span class='dollar_number-1'>1</span>
-                    <span class='dollar_number-green'>0</span>
-                    <span class='dollar_number-green'>0</span>
+                    to <span className='dollar_sign'>$</span>
+                    <span className='dollar_number-1'>1</span>
+                    <span className='dollar_number-green'>0</span>
+                    <span className='dollar_number-green'>0</span>
                 </h1>
             </div>
 

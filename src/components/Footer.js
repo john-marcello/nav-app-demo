@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/styles/Footer.css";
 
+// renders the footer component woth logos and copyright
 function Footer() {
     return (
         <>
@@ -15,7 +16,7 @@ function Footer() {
                             />
                         </a>
                         <div className='footer-credits'>
-                            © 2024 PrizePicks. All Rights Reserved
+                            © 2024 PrizePicks. All Rights Reserved.
                         </div>
                         <img
                             className='footer-atl'

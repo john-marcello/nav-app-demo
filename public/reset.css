@@ -33,10 +33,16 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-    min-height: 100vh;
+    height: 100%;
     text-rendering: optimizeSpeed;
     font-size: 1rem;
     line-height: 1.5;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%    ;
 }
 
 /* A elements that don't have a class get default styles */

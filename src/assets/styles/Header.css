@@ -1,21 +1,18 @@
+/* header containers which are fixed position */
 .nav-wrapper {
-    width: 100%;
-    height: auto;
-    min-height: 6.5rem;
-    background-color: #050614;;
-    align-items: center;
-    padding: 1.8rem 3.75rem;
     display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 6.25rem;
+    padding: 2.25rem 3.75rem;
+    background-color: #050614;;
     position: fixed;
     top: 0;
     z-index: 10;
 }
 
 .nav-container {
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    max-width: 97.7rem;
+    display: grid;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     grid-template-rows: auto;
@@ -23,21 +20,27 @@
     grid-auto-columns: 1fr;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 97.7rem;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
     position: relative;
+    z-index: 100;
 }
 
+/* left column for logo */
 .nav-logo {
+    float: left;
     text-decoration: none; 
 }
 
 .nav-logo-img {
-    width: 11.75rem;
+    width: 11.9rem;
     display: block;
 }
 
+/* center column for nav links */
 .nav-bar {
     display: flex;
     grid-column-gap: 1.5vw;
@@ -48,16 +51,13 @@
     position: static;
 }
 .nav-link {
-    color: #7a7983;
-    font-size: 1.25rem;
-    margin: 0 1rem;
-    text-decoration: none;
-    vertical-align: top;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
     display: inline-block;
+    vertical-align: top;
+    padding: 7px;
+    color: #7a7983;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: left;
     position: relative;
 }
 
@@ -65,33 +65,35 @@
     color: #ddd;
 }
 
+/* right column for buttons */
 .nav-buttons {
-    grid-column-gap: 1rem;
-    margin-left: 1rem;
     display: flex;
     justify-self: end;
+    grid-column-gap: 1rem;
+    margin-left: 1rem;
+    
 }
 
 .nav-primary-btn {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1rem 1.5rem;
     background-color: #8000ff;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1;
     text-decoration: none;
 }
 
 .nav-secondary-btn {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1rem 1.5rem;
     background-color: #1f202d;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1;
     text-decoration: none;
 }

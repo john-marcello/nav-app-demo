@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo.svg";
 
 
-// renders the header with logo, nav, and buttons
+// renders the header componennt with logo, nav, and buttons
 // uses react-router-dom to set up linked routes
 function Header() {
     return (
