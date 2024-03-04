@@ -1,0 +1,32 @@
+.line-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 6rem 0 3rem;
+}
+
+.footer-container {
+    max-width: 90rem;
+    color: #7a7983;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.footer-logo {
+    width: 5rem;
+    height: 5rem;
+    padding-left: 0;
+}
+
+.footer-credits {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.footer-atl {
+    width: 8rem;
+    height: 8rem;
+ }

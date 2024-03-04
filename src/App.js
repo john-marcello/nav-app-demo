@@ -1,19 +1,39 @@
+// dependencies
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import StylesInline from "./components/demos/StylesInline";
-import StylesSheet from "./components/demos/StylesSheet";
+// components
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 
-import "./App.css";
-import StylesModule from "./components/demos/StylesModule";
-import StylesComponent from "./components/demos/StylesComponent";
+// styles
+import "./assets/styles/Main.css";
 
-export default function App() {
-  return (
-    <div className="App">
-      <StylesInline />
-      <StylesSheet />
-      <StylesModule />
-      <StylesComponent />
-    </div>
-  );
+// pages
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
+// renders the app with header, main, and footer
+// uses react-router-dom to manage broser routes
+function App() {
+    return (
+        <Router>
+            <div class='page-wrapper'>
+                <Header />           
+                <section className='main-wrapper'>
+                    <main>
+                        <Routes>
+                            <Route path='/about' element={<About />} />
+                            <Route path='/contact' element={<Contact />} />
+                            <Route path='/' element={<Home />} />
+                        </Routes>
+                    </main>
+                    <Footer />
+                </section>
+            </div>
+        </Router>
+    );
 }
+
+export default App;
