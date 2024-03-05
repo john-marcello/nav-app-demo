@@ -19,8 +19,11 @@ This project is intended for demonstration purposes only. The goal is to showcas
 - Utlized appropriate linked `css` files tied to components.
 
 - In the future other css methods could be used such as:
-  - inline css
+
+   - inline css
+
   - css modules, or
+
   - styled components
 
 - Rendered images to the page from local directories, basically the `favicon` and the `logo.svg`.
@@ -32,10 +35,13 @@ This project is intended for demonstration purposes only. The goal is to showcas
 - Routing is handled by `react-router-dom` and is leveraged to update the `main` element when a navigation link is clicked.
 
 - The data was initially sourced from this api endpoint:
+
   - [https://api.prizepicks.com/projections](https://api.prizepicks.com/projections?league_id=7&per_page=250&state_code=UT&single_stat=true&game_mode=pickem)
  
 - That data was scrubbed utlizing a filter script to create an new array of objects.
+
   - The filter removed that original `[data]` array, and renamed the `included` array to now be called `[data]`.
+
   - This data set targets the `"type": "new_player"` objects to access player profile data.
  
 - The extracted data was save locally in the `public` directory as `data.json` to be used for development purposes.
@@ -46,22 +52,31 @@ This project is intended for demonstration purposes only. The goal is to showcas
 
 **Home Page**
 - This Home page acts primarily as a static landing page and estalblishes the visual design of the app
+
 - Some links (e.g. Sign Up & Login) lead off site to [https://app.prizepicks.com/](https://app.prizepicks.com/) for demo puposes.
 
 **Available Page**
 - The Available page maps the tabs array to create a list of buttons, which can toggle the map image and text description content.
+
 - The `activeTab` and `setActiveTab` state is initialized to set the active tab to the first tab initial load.
+
 - An `onClick` event handler is triggered when a tab button is click which updates the state and set a dynamic css class to the active tab.
 
 **Players Page**
 - `useState` is utilized to set up state to track the player's data, loading state, and error state.
+
   - We set the initial state of the players data to an empty array.
-  - We wet the initial state of the loading state to true.
-  - And, we set the initial state of the error state to an empty string.
+
+   - We wet the initial state of the loading state to true.
+
+   - And, we set the initial state of the error state to an empty string.
  
 - `useEffect` is utilized to fetch data from the JSON file with an `axios` get request.
+
   - A `try` block returns a list of players and their attributes.
+
   - A `catch` block logs an error if the data cannot be fetched.
+
   - In the `useEffect` hook triggers the an empty dependency array limits the requests and prevents re-renders. 
 
 ## Directory Structure
