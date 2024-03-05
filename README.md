@@ -40,7 +40,9 @@ This project is intended for demonstration purposes only. The goal is to showcas
  
 - That data was scrubbed utlizing a filter script to create an new array of objects.
 
-  - The filter removed that original `[data]` array, and renamed the `included` array to now be called `[data]`.
+  - The filter removed that original `[data]` array.
+
+  - Then tthe `included` array was renamed to now be called `[data]`.
 
   - This data set targets the `"type": "new_player"` objects to access player profile data.
  
