@@ -11,9 +11,11 @@ import "./App.css";
 import "./assets/styles/Main.css";
 
 // pages
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home.js";
+import Available from "./pages/Available.js";
+import Boards from "./pages/Boards.js";
+import Promos from "./pages/Promos.js";
+
 
 // renders the app with fixed header and scrollable main and footer sections
 // uses react-router-dom to manage browser routes
@@ -25,8 +27,9 @@ function App() {
                 <section className='main-wrapper'>
                     <main>
                         <Routes>
-                            <Route path='/about' element={<About />} />
-                            <Route path='/contact' element={<Contact />} />
+                            <Route path='/promos' element={<Promos />} />
+                            <Route path='/boards' element={<Boards />} />
+                            <Route path='/available' element={<Available />} />
                             <Route path='/' element={<Home />} />
                         </Routes>
                     </main>

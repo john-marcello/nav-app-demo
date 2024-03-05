@@ -1,0 +1,74 @@
+.header-available {
+    font-family: 'Encode Sans Expanded','Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    font-kerning: none;
+    line-height: 1.1;
+    letter-spacing: -0.1rem;
+    margin: 0.5rem 0 1.5rem;
+    text-align: center;
+    max-width: 75rem;
+}
+
+.text-color-green {
+    color: #6eff00;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.tab-list {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.button {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0.3rem;
+    padding: 1rem 3rem;
+    border: none;
+    background: #1f202d;
+    color: #fbf9ff;
+}
+  
+.button-active {
+    border: none;
+    background: #fbf9ff;
+    color: #1f202d;
+}
+  
+.availability-map {
+    height: 100%;
+    width: 100%;    
+    max-width: 120rem;
+}
+
+.padding-divider {
+    padding: 0.75rem;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 88ch;
+    height: 6.25rem;
+}
+
+.text-description {
+    color: #adacb5;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    
+}
+
+.text-description span {
+    color: #6eff00;
+}

@@ -16,9 +16,9 @@ function Header() {
                         <img className='nav-logo-img' src={Logo} alt='logo' />
                     </a>
                     <nav className='nav-bar'>
-                        <Link className='nav-link' to='/about'>Available States</Link>
-                        <Link className='nav-link' to='/contact'>Today's Boards</Link>
-                        <Link className='nav-link' to='/contact'>Recurring Promos</Link>
+                        <Link className='nav-link' to='/available'>Where To Play?</Link>
+                        <Link className='nav-link' to='/boards'>Today's Boards</Link>
+                        <Link className='nav-link' to='/promos'>Recurring Promos</Link>
                         <a className='nav-link' href='https://www.prizepicks.com/help-center' target='_blank' rel='noreferrer'>Help Center</a>
                     </nav>
                     <div className='nav-buttons'>
