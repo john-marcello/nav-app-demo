@@ -1,0 +1,1660 @@
+{
+    "data": [
+        {
+            "type": "new_player",
+            "id": "1291",
+            "attributes": {
+                "combo": false,
+                "display_name": "Nikola Jokic",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Jokic_f2625432-3903-4f90-9b0b-2e4f63856bb0.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Denver",
+                "name": "Nikola Jokic",
+                "position": "C",
+                "team": "DEN",
+                "team_name": "Nuggets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "59275",
+            "attributes": {
+                "combo": false,
+                "display_name": "Darius Garland",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Darius_Garland_b79b88e1-35ef-4947-8a61-f6ec631a1e15.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Cleveland",
+                "name": "Darius Garland",
+                "position": "G",
+                "team": "CLE",
+                "team_name": "Cavaliers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "187519",
+            "attributes": {
+                "combo": false,
+                "display_name": "P.J. Washington",
+                "image_url": "https://static.prizepicks.com/images/players/nba/PJ_Washington_6d7f4f2f-7ea7-4c56-8082-dfdce67f5487.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Dallas",
+                "name": "P.J. Washington",
+                "position": "F",
+                "team": "DAL",
+                "team_name": "Mavericks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "25439",
+            "attributes": {
+                "combo": false,
+                "display_name": "Tyrese Maxey",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Tyrese_Maxey_75fc46eb-71d8-4d1a-984f-3747ccd7a4c9.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Philadelphia",
+                "name": "Tyrese Maxey",
+                "position": "G",
+                "team": "PHI",
+                "team_name": "76ers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "183185",
+            "attributes": {
+                "combo": false,
+                "display_name": "RJ Barrett",
+                "image_url": "https://static.prizepicks.com/images/players/nba/R.J._Barrett_42c5f009-dfd2-4a94-a750-0943791e138e.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Toronto",
+                "name": "RJ Barrett",
+                "position": "F-G",
+                "team": "TOR",
+                "team_name": "Raptors"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "55716",
+            "attributes": {
+                "combo": false,
+                "display_name": "Alperen Sengun",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Alperen_Sengun_47ff78e7-5607-48d6-9c1a-bddb075dbe70.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Houston",
+                "name": "Alperen Sengun",
+                "position": "C",
+                "team": "HOU",
+                "team_name": "Rockets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "87498",
+            "attributes": {
+                "combo": false,
+                "display_name": "Aaron Nesmith",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Aaron_Nesmith_90d63a71-e4fe-411c-9773-2e74b5e1cb3b.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Indiana",
+                "name": "Aaron Nesmith",
+                "position": "G-F",
+                "team": "IND",
+                "team_name": "Pacers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1604",
+            "attributes": {
+                "combo": false,
+                "display_name": "Myles Turner",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Myles_Turner_323f9ef8-ecdd-41a7-859e-dd3db48ba913.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Indiana",
+                "name": "Myles Turner",
+                "position": "C-F",
+                "team": "IND",
+                "team_name": "Pacers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "37691",
+            "attributes": {
+                "combo": false,
+                "display_name": "Aaron Gordon",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Aaron_Gordon_20f85838-0bd5-4c1f-ab85-a308bafaf5bc.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Denver",
+                "name": "Aaron Gordon",
+                "position": "F",
+                "team": "DEN",
+                "team_name": "Nuggets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "2023",
+            "attributes": {
+                "combo": false,
+                "display_name": "Michael Porter Jr.",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Michael_Porter_Jr._3a7d6510-00e9-4265-81df-864a1f547269.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Denver",
+                "name": "Michael Porter Jr.",
+                "position": "F",
+                "team": "DEN",
+                "team_name": "Nuggets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "25434",
+            "attributes": {
+                "combo": false,
+                "display_name": "Isaiah Stewart",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Isaiah_Stewart_9d4d6c87-78db-4556-b94a-bb8d566dd004.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Detroit",
+                "name": "Isaiah Stewart",
+                "position": "F-C",
+                "team": "DET",
+                "team_name": "Pistons"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "37655",
+            "attributes": {
+                "combo": false,
+                "display_name": "Gary Trent Jr.",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Gary_Trent_Jr._62daf16f-0c4c-46ae-9e54-0d34d6fdef85.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Toronto",
+                "name": "Gary Trent Jr.",
+                "position": "G",
+                "team": "TOR",
+                "team_name": "Raptors"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "173819",
+            "attributes": {
+                "combo": false,
+                "display_name": "Victor Wembanyama",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Victor_Wembanyama_98e2cdeb-69dc-499c-a853-84c32c714924.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "San Antonio",
+                "name": "Victor Wembanyama",
+                "position": "F-C",
+                "team": "SAS",
+                "team_name": "Spurs"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "79883",
+            "attributes": {
+                "combo": false,
+                "display_name": "Paolo Banchero",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Paolo_Banchero_49d8f5ef-2867-4597-a3ab-5ffc5e651258.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Orlando",
+                "name": "Paolo Banchero",
+                "position": "F",
+                "team": "ORL",
+                "team_name": "Magic"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "87857",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jalen Johnson",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jalen_Johnson_d222539f-fa52-4070-807f-d3aba372f46d.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Atlanta",
+                "name": "Jalen Johnson",
+                "position": "F",
+                "team": "ATL",
+                "team_name": "Hawks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "54160",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jonas Valanciunas",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jonas_Valanciunas_c8788ad2-89f7-4ec9-a22b-dcaf6190889b.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New Orleans",
+                "name": "Jonas Valanciunas",
+                "position": "C",
+                "team": "NOP",
+                "team_name": "Pelicans"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "96236",
+            "attributes": {
+                "combo": false,
+                "display_name": "Kyrie Irving",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Kyrie_Irving_dd146010-902b-4ad7-b98c-650d0363a2f0.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Dallas",
+                "name": "Kyrie Irving",
+                "position": "G",
+                "team": "DAL",
+                "team_name": "Mavericks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "55372",
+            "attributes": {
+                "combo": false,
+                "display_name": "Franz Wagner",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Franz_Wagner_514fd4aa-5384-4bc7-a670-367a426ca235.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Orlando",
+                "name": "Franz Wagner",
+                "position": "F",
+                "team": "ORL",
+                "team_name": "Magic"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "172380",
+            "attributes": {
+                "combo": false,
+                "display_name": "Bradley Beal",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Bradley_Beal_ff461754-ad20-4eeb-af02-2b46cc980b24.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Phoenix",
+                "name": "Bradley Beal",
+                "position": "G",
+                "team": "PHX",
+                "team_name": "Suns"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "37711",
+            "attributes": {
+                "combo": false,
+                "display_name": "Wendell Carter Jr.",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Wendell_Carter_744d5db7-b0be-474a-a58b-6ddf7ae35567.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Orlando",
+                "name": "Wendell Carter Jr.",
+                "position": "C-F",
+                "team": "ORL",
+                "team_name": "Magic"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "187683",
+            "attributes": {
+                "combo": false,
+                "display_name": "Kelly Olynyk",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Kelly_Olynyk_8e288d6e-50b8-404b-812b-823ae5bab61f.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Toronto",
+                "name": "Kelly Olynyk",
+                "position": "F-C",
+                "team": "TOR",
+                "team_name": "Raptors"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1646",
+            "attributes": {
+                "combo": false,
+                "display_name": "Bam Adebayo",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Bam_Adebayo_11c303dc-540c-4090-8e0c-76c2fb2c125a.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Miami",
+                "name": "Bam Adebayo",
+                "position": "C-F",
+                "team": "MIA",
+                "team_name": "Heat"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "26792",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jarrett Allen",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jarrett_Allen_a3fff5c7-19b6-4dac-bd75-11b944bea505.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Cleveland",
+                "name": "Jarrett Allen",
+                "position": "C",
+                "team": "CLE",
+                "team_name": "Cavaliers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "53830",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jalen Suggs",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jalen_Suggs_6dda6e0a-4b74-4486-80cd-5f9a8d93d1ba.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Orlando",
+                "name": "Jalen Suggs",
+                "position": "G",
+                "team": "ORL",
+                "team_name": "Magic"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "59107",
+            "attributes": {
+                "combo": false,
+                "display_name": "Cade Cunningham",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Cade_Cunningham_57d55cd4-6ab8-4255-a248-bef800c0cbab.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Detroit",
+                "name": "Cade Cunningham",
+                "position": "G",
+                "team": "DET",
+                "team_name": "Pistons"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "10790",
+            "attributes": {
+                "combo": false,
+                "display_name": "Zion Williamson",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Zion_Williamson_5cc51c05-06f5-4ae4-89a4-1d329fbbcdfb.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New Orleans",
+                "name": "Zion Williamson",
+                "position": "F",
+                "team": "NOP",
+                "team_name": "Pelicans"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "173586",
+            "attributes": {
+                "combo": false,
+                "display_name": "Fred VanVleet",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Fred_VanVleet_45f17314-918c-49bd-a482-adc171859025.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Houston",
+                "name": "Fred VanVleet",
+                "position": "G",
+                "team": "HOU",
+                "team_name": "Rockets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1290",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jamal Murray",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jamal_Murray_685576ef-ea6c-4ccf-affd-18916baf4e60.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Denver",
+                "name": "Jamal Murray",
+                "position": "G",
+                "team": "DEN",
+                "team_name": "Nuggets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "187652",
+            "attributes": {
+                "combo": false,
+                "display_name": "Tre Mann",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Tre_Mann_5b681679-4d8c-4964-bbba-5ed058257745.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Charlotte",
+                "name": "Tre Mann",
+                "position": "G",
+                "team": "CHA",
+                "team_name": "Hornets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1654",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jimmy Butler",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jimmy_Butler_0e163d44-67a7-4107-9421-5333600166bb.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Miami",
+                "name": "Jimmy Butler",
+                "position": "F",
+                "team": "MIA",
+                "team_name": "Heat"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "25099",
+            "attributes": {
+                "combo": false,
+                "display_name": "Bogdan Bogdanovic",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Bogdan_Bogdanovic_b4282659-dd1a-4042-a075-7df4890858e7.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Atlanta",
+                "name": "Bogdan Bogdanovic",
+                "position": "G",
+                "team": "ATL",
+                "team_name": "Hawks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "174345",
+            "attributes": {
+                "combo": false,
+                "display_name": "Dereck Lively II",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Dereck_Lively_1b31afe2-7fb7-42d1-8eef-003c5eb619c2.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Dallas",
+                "name": "Dereck Lively II",
+                "position": "C",
+                "team": "DAL",
+                "team_name": "Mavericks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "173789",
+            "attributes": {
+                "combo": false,
+                "display_name": "Ausar Thompson",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Ausar_Thompson_18c14a3d-2ce0-451c-bceb-b0ce13c16ead.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Detroit",
+                "name": "Ausar Thompson",
+                "position": "G-F",
+                "team": "DET",
+                "team_name": "Pistons"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1620",
+            "attributes": {
+                "combo": false,
+                "display_name": "Tobias Harris",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Tobias_Harris_82f09975-6a8d-42e4-b42c-a52b9349ed50.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Philadelphia",
+                "name": "Tobias Harris",
+                "position": "F",
+                "team": "PHI",
+                "team_name": "76ers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1266",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jayson Tatum",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jayson_Tatum_98136da3-452f-49dc-a794-1ee9c76443f2.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Boston",
+                "name": "Jayson Tatum",
+                "position": "F-G",
+                "team": "BOS",
+                "team_name": "Celtics"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "25436",
+            "attributes": {
+                "combo": false,
+                "display_name": "Josh Green",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Josh_Green_bda65c13-f2d4-43ec-b058-b7807bec4867.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Dallas",
+                "name": "Josh Green",
+                "position": "G",
+                "team": "DAL",
+                "team_name": "Mavericks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "85745",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jalen Brunson",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jalen_Brunson_8d3edba8-9004-4199-9328-cc2208e8b0d3.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New York",
+                "name": "Jalen Brunson",
+                "position": "G",
+                "team": "NYK",
+                "team_name": "Knicks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "10726",
+            "attributes": {
+                "combo": false,
+                "display_name": "Nicolas Claxton",
+                "image_url": "https://static.prizepicks.com/images/players/nba/2023-24_Brooklyn_Nets_Media_Day_288519dc-eae8-4daf-afa4-c86322b7460e.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Brooklyn",
+                "name": "Nicolas Claxton",
+                "position": "C",
+                "team": "BKN",
+                "team_name": "Nets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "183194",
+            "attributes": {
+                "combo": false,
+                "display_name": "Immanuel Quickley",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Immanuel_Quickley_cb0b5991-53e4-4dce-bf95-215fd6ecf728.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Toronto",
+                "name": "Immanuel Quickley",
+                "position": "G",
+                "team": "TOR",
+                "team_name": "Raptors"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "53979",
+            "attributes": {
+                "combo": false,
+                "display_name": "Evan Mobley",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Evan_Mobley_d64b602e-45f2-4ba9-878b-0a4f7210ec77.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Cleveland",
+                "name": "Evan Mobley",
+                "position": "C",
+                "team": "CLE",
+                "team_name": "Cavaliers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "173587",
+            "attributes": {
+                "combo": false,
+                "display_name": "Dillon Brooks",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Dillon_Brooks_72a6489b-ad35-4f06-8a4f-a68ea1052f7b.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Houston",
+                "name": "Dillon Brooks",
+                "position": "G-F",
+                "team": "HOU",
+                "team_name": "Rockets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "79867",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jabari Smith Jr.",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jabari_Smith_293be24b-3a94-40b2-a7a4-a1dd788302e9.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Houston",
+                "name": "Jabari Smith Jr.",
+                "position": "F",
+                "team": "HOU",
+                "team_name": "Rockets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "87352",
+            "attributes": {
+                "combo": false,
+                "display_name": "Andrew Nembhard",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Andrew_Nembhard_02acc094-76ab-4b3e-b51d-a351a9bab6b9.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Indiana",
+                "name": "Andrew Nembhard",
+                "position": "G-F",
+                "team": "IND",
+                "team_name": "Pacers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "59971",
+            "attributes": {
+                "combo": false,
+                "display_name": "Tyrese Haliburton",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Tyrese_Haliburton_254e42d7-df01-4c68-9264-bca06c83c2c1.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Indiana",
+                "name": "Tyrese Haliburton",
+                "position": "G",
+                "team": "IND",
+                "team_name": "Pacers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "79907",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jaden Ivey",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jaden_Ivey_ec887131-efba-43a0-ad0a-0757ab3f0399.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Detroit",
+                "name": "Jaden Ivey",
+                "position": "G",
+                "team": "DET",
+                "team_name": "Pistons"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1596",
+            "attributes": {
+                "combo": false,
+                "display_name": "Clint Capela",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Clint_Capela_c37dafbb-a269-41f6-813f-bdb4da388203.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Atlanta",
+                "name": "Clint Capela",
+                "position": "C",
+                "team": "ATL",
+                "team_name": "Hawks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "174284",
+            "attributes": {
+                "combo": false,
+                "display_name": "Donte DiVincenzo",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Donte_DiVincenzo_9cfad453-b323-43dc-a066-6cd0a21745ad.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New York",
+                "name": "Donte DiVincenzo",
+                "position": "G",
+                "team": "NYK",
+                "team_name": "Knicks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "87848",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jalen Duren",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jalen_Duren_00fb2704-aa25-4ef7-8972-cde454810810.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Detroit",
+                "name": "Jalen Duren",
+                "position": "C",
+                "team": "DET",
+                "team_name": "Pistons"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "54064",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jalen Green",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jalen_Green_9a331092-35db-456c-a44a-d5b80a02ebe9.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Houston",
+                "name": "Jalen Green",
+                "position": "G",
+                "team": "HOU",
+                "team_name": "Rockets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "185263",
+            "attributes": {
+                "combo": false,
+                "display_name": "Pascal Siakam",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Pascal_Siakam_3df1db1d-6596-489e-8e26-80f60fd9b1f4.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Indiana",
+                "name": "Pascal Siakam",
+                "position": "F",
+                "team": "IND",
+                "team_name": "Pacers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "10736",
+            "attributes": {
+                "combo": false,
+                "display_name": "Darius Garland",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Darius_Garland_b79b88e1-35ef-4947-8a61-f6ec631a1e15.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Cleveland",
+                "name": "Darius Garland",
+                "position": "G",
+                "team": "CLE",
+                "team_name": "Cavaliers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1535",
+            "attributes": {
+                "combo": false,
+                "display_name": "Jaylen Brown",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Jaylen_Brown_ffc5579c-783f-4d62-80ab-3c3dcb05a27d.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Boston",
+                "name": "Jaylen Brown",
+                "position": "G-F",
+                "team": "BOS",
+                "team_name": "Celtics"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "173120",
+            "attributes": {
+                "combo": false,
+                "display_name": "Kristaps Porzingis",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Kristaps_Porzingis_3c5901ef-af1d-441d-aeed-8e0a93cead49.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Boston",
+                "name": "Kristaps Porzingis",
+                "position": "F-C",
+                "team": "BOS",
+                "team_name": "Celtics"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "96335",
+            "attributes": {
+                "combo": false,
+                "display_name": "Kevin Durant",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Kevin_Durant__53f2fa48-e61b-49fb-843d-8a3e872257eb.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Phoenix",
+                "name": "Kevin Durant",
+                "position": "F",
+                "team": "PHX",
+                "team_name": "Suns"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "123595",
+            "attributes": {
+                "combo": false,
+                "display_name": "Josh Hart",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Josh_Hart_d6fbf8f8-bb4a-43f7-95f6-498a5e042138.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New York",
+                "name": "Josh Hart",
+                "position": "G",
+                "team": "NYK",
+                "team_name": "Knicks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "187514",
+            "attributes": {
+                "combo": false,
+                "display_name": "Buddy Hield",
+                "image_url": "https://static.prizepicks.com/images/players/nba/2023-24_Indiana_Pacers_Media_Day_795f46f2-c78d-4f1d-9ee2-4331c1cc8184.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Philadelphia",
+                "name": "Buddy Hield",
+                "position": "G",
+                "team": "PHI",
+                "team_name": "76ers"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1540",
+            "attributes": {
+                "combo": false,
+                "display_name": "Miles Bridges",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Miles_Bridges_af8f331b-96a6-416e-8837-b14d5b11c52d.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Charlotte",
+                "name": "Miles Bridges",
+                "position": "F",
+                "team": "CHA",
+                "team_name": "Hornets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "80032",
+            "attributes": {
+                "combo": false,
+                "display_name": "Dejounte Murray",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Dejounte_Murray_7d27ec3b-1e31-4b0f-abcf-e12039a0e27b.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Atlanta",
+                "name": "Dejounte Murray",
+                "position": "G",
+                "team": "ATL",
+                "team_name": "Hawks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "123596",
+            "attributes": {
+                "combo": false,
+                "display_name": "Saddiq Bey",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Saddiq_Bey_d531a451-6377-4942-a26f-3507d60fb36b.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Atlanta",
+                "name": "Saddiq Bey",
+                "position": "G-F",
+                "team": "ATL",
+                "team_name": "Hawks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "96321",
+            "attributes": {
+                "combo": false,
+                "display_name": "Dorian Finney-Smith",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Dorian_Finney-Smith_426357dc-340b-4d89-8e3b-7d6b4022b460.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Brooklyn",
+                "name": "Dorian Finney-Smith",
+                "position": "F",
+                "team": "BKN",
+                "team_name": "Nets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "96508",
+            "attributes": {
+                "combo": false,
+                "display_name": "Mikal Bridges",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Mikal_Bridges_83cc5b28-36a7-43ba-ba20-8347bd1de583.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Brooklyn",
+                "name": "Mikal Bridges",
+                "position": "F",
+                "team": "BKN",
+                "team_name": "Nets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "174280",
+            "attributes": {
+                "combo": false,
+                "display_name": "Brandon Miller",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Brandon_Miller_775e4450-cdcd-43a1-b4cd-dc29fba48503.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Charlotte",
+                "name": "Brandon Miller",
+                "position": "F-G",
+                "team": "CHA",
+                "team_name": "Hornets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "59336",
+            "attributes": {
+                "combo": false,
+                "display_name": "Nikola Jokic",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Nikola_Jokic_f2625432-3903-4f90-9b0b-2e4f63856bb0.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Denver",
+                "name": "Nikola Jokic",
+                "position": "C",
+                "team": "DEN",
+                "team_name": "Nuggets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "56913",
+            "attributes": {
+                "combo": false,
+                "display_name": "Herbert Jones",
+                "image_url": "https://static.prizepicks.com/images/players/nba/2023-24_New_Orleans_Pelicans_Media_Day_66b88001-06c2-4f4a-9825-b6e0cc1df6cc.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New Orleans",
+                "name": "Herbert Jones",
+                "position": "G-F",
+                "team": "NOP",
+                "team_name": "Pelicans"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "58830",
+            "attributes": {
+                "combo": false,
+                "display_name": "Luka Doncic",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Luka_Doncic_d2ee92e9-3e72-45eb-b156-2dc5adc1e6f7.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Dallas",
+                "name": "Luka Doncic",
+                "position": "F-G",
+                "team": "DAL",
+                "team_name": "Mavericks"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "87402",
+            "attributes": {
+                "combo": false,
+                "display_name": "Kentavious Caldwell-Pope",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Kentavious_Caldwell-Pope_cecc054e-b9ec-4c71-8bbb-5ee665a8c3a9.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Denver",
+                "name": "Kentavious Caldwell-Pope",
+                "position": "G",
+                "team": "DEN",
+                "team_name": "Nuggets"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "37695",
+            "attributes": {
+                "combo": false,
+                "display_name": "Gary Harris",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Gary_Harris_6b5d0264-fa2d-4956-919b-61abfc6bb8d7.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "Orlando",
+                "name": "Gary Harris",
+                "position": "G",
+                "team": "ORL",
+                "team_name": "Magic"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "1287",
+            "attributes": {
+                "combo": false,
+                "display_name": "Brandon Ingram",
+                "image_url": "https://static.prizepicks.com/images/players/nba/Brandon_Ingram_8082841d-e516-43c6-a81b-7987fa321acd.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New Orleans",
+                "name": "Brandon Ingram",
+                "position": "F",
+                "team": "NOP",
+                "team_name": "Pelicans"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        },
+        {
+            "type": "new_player",
+            "id": "59930",
+            "attributes": {
+                "combo": false,
+                "display_name": "CJ McCollum",
+                "image_url": "https://static.prizepicks.com/images/players/nba/C.J._McCollum_bc70a55a-cee0-478f-9a13-cf51c4a4187c.webp",
+                "league": "NBA",
+                "league_id": 7,
+                "market": "New Orleans",
+                "name": "CJ McCollum",
+                "position": "G",
+                "team": "NOP",
+                "team_name": "Pelicans"
+            },
+            "relationships": {
+                "league": {
+                    "data": {
+                        "type": "league",
+                        "id": "7"
+                    }
+                }
+            }
+        }
+    ]
+}

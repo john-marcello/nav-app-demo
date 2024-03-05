@@ -64,12 +64,12 @@ function Available() {
                 <div className='text-wrapper'>
                     <p className='text-description'>{activeTab.text }</p>
                 </div>
+                <div className='padding-divider'></div>
                 <img
                     className='availability-map'
                     src={activeTab.image}
                     alt={activeTab.alt}
                 />
-                <div className='padding-divider'></div>
                 <div className='padding-divider'></div>
                 <div className='padding-divider'></div>
                 <p className='text-description'>*Available in all of Canada, except for Ontario.</p>

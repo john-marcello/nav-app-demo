@@ -13,7 +13,7 @@ import "./assets/styles/Main.css";
 // pages
 import Home from "./pages/Home.js";
 import Available from "./pages/Available.js";
-import Boards from "./pages/Boards.js";
+import Players from "./pages/Players.js";
 import Promos from "./pages/Promos.js";
 
 
@@ -28,7 +28,7 @@ function App() {
                     <main>
                         <Routes>
                             <Route path='/promos' element={<Promos />} />
-                            <Route path='/boards' element={<Boards />} />
+                            <Route path='/players' element={<Players />} />
                             <Route path='/available' element={<Available />} />
                             <Route path='/' element={<Home />} />
                         </Routes>
