@@ -1,3 +1,4 @@
+// sets the position mapping for the player positions
 const positionMapping = {
     C: "Center",
     G: "Guard",

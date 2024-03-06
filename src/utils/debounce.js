@@ -1,3 +1,4 @@
+// used to debounce the search query input
 function debounce(func, wait) {
     let timeout;
 

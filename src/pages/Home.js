@@ -1,9 +1,8 @@
 import React from "react";
 import "../assets/styles/Home.css";
 
-// Renders the home page
-// Todo: buttons can be styled components in the future
-// Todo: add a hover state for buttons
+// renders the home page
+// todo: buttons can be styled components in the future
 function Home() {
     return (      
         <>

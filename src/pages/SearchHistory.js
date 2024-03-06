@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSearch } from '../context/SearchContext.js';
 
+// renders the search history page
 function SearchHistory() {
     const { searchHistory, resetHistory } = useSearch();
 

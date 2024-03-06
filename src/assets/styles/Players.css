@@ -9,6 +9,7 @@
     min-height: 100vh;
 }
 
+/* search row and search bar */
 .search-row {
     display: grid;
     grid-template-rows: auto auto;
@@ -98,6 +99,7 @@
     font-size: 0.9rem;
     font-weight: 700;
     color: rgb(255, 246, 0);
+    cursor: pointer;
 }
 
 /* grid for players list & media queries */
@@ -136,7 +138,7 @@
     }
 }
 
-/* player list items or cards */
+/* player list item cards */
 .players-item {
     display: flex;
     flex-direction: column;
@@ -161,14 +163,7 @@
     height: 100%;
 }
 
-.projection-contents {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-}
-
+/* last five feature */
 .last-five-button {
     position: absolute;
     left: 1rem;
@@ -190,6 +185,7 @@
     padding: 0.5rem;
 }
 
+/* player image, name, team, position */
 .player {
     width: 100%;
 }
@@ -245,6 +241,7 @@
     margin: 0 10px;
 }
 
+/* point, more, or less */
 .points {
     font-weight: 700;
     vertical-align: middle;
@@ -313,6 +310,7 @@
     border-bottom: 1px solid #2c2c39;
 }
 
+/* no results found */
 .not-found {
     align-items: center;
     display: flex;

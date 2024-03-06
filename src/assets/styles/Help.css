@@ -1,9 +1,10 @@
+/* headers */
 .container-large {
     width: 100%;
     max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
-    min-height: 10rem;
+    min-height: 12rem;
 }
 
 .flex-center {
@@ -25,6 +26,12 @@
     z-index: 2;
 }
 
+@media (max-width: 768px) {
+    .encode-sans {
+        font-size: 4rem;
+    }
+}
+
 .brick-accent {
     color: #8000ff;
     letter-spacing: -0.4rem;
@@ -34,6 +41,12 @@
     position: absolute;
     top: -4rem;
     letter-spacing: -0.2srem;
+}
+
+@media (max-width: 768px) {
+    .brick-accent {
+        font-size: 8rem;
+    }
 }
 
 .leaders {
@@ -52,6 +65,7 @@
     padding-bottom: 3rem;
 }
 
+/* video */
 .video-wrapper {
     display: flex;
     align-items: center;

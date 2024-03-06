@@ -3,7 +3,7 @@ import "../assets/styles/Help.css";
 
 import VideoEmbed from "../components/VideoEmbed";
 
-// renders the about page
+// renders the help page
 function Help() {
     return (
         <>

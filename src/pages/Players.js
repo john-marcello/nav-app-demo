@@ -6,23 +6,20 @@ import positionMapping from '../utils/positionMapping';
 
 // renders the players page
 function Players() {
+
     // set up state to track the players data, loading state, and error state
-    // set the initial state of the players data to an empty array
-    // set the initial state of the loading state to true
-    // set the initial state of the error state to an empty string
     const [data, setData] = useState({
         players: [],
         isLoading: true,
         error: '',
     });
 
-    // Add a new state for the search query
+    // set up state for the search query
     const [searchQuery, setSearchQuery] = useState('');
 
-    // fetch data from the JSON file or API with axios get request
-    // the try block returns a list of players and their attributes
-    // the catch block logs an error if the data cannot be fetched
+    // fetch data source from the JSON file with axios get request
     // the use effect hook triggers the fetch data function on page load
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -41,22 +38,15 @@ function Players() {
                 });
             }
         };
-
         fetchData();
     }, []);
 
     const handleCancel = () => {setSearchQuery('');};
 
-    // if the data is loading, display a loading message
-    // todo: the loading state is indicator is temporarily disabled to prevent FOUC
     // if (data.isLoading) return <div>Loading...</div>;
-
-    // if there is an error, display the error message
     if (data.error) return <div>{data.error}</div>;
 
     // filter the players based on the search query input
-    // the search query is converted to lowercase to help with the search
-    // the search query is compared to the player's display name, market, team name, and position
     // positionMapping is used to map the position abbreviation to the full position name
     const filteredPlayers = data.players.filter((player) => {
         const searchLower = searchQuery.toLowerCase();
@@ -68,9 +58,7 @@ function Players() {
         return displayName || market || teamName || position;
     });
 
-    // render the players list
-    // if the filtered players list is greater than 0, render the players list
-    // else show a message that no search results were found
+    // render the players list or shows a no results found
     return (
         <div className='players-container'>
             <div className='search-row'>

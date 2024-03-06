@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../assets/styles/Available.css';
 
 // set up an array of objects to represent the tab data
-// each object has an id, alt text, text, and image
 const tabs = [
     { 
         id: 1, 
@@ -44,10 +43,6 @@ function Available() {
                 <p className='text-description'>If your state is highlighted below, <span class="text-color-green">LFG!</span></p>
                 <div className='padding-divider'></div>
                 <div className='tab-list'>
-                    
-                    {/* map through the tabs array and create the list of buttons */}
-                    {/* trigger the event handler to set the corresponding tab as the active tab */}
-                    {/* update the class name dynamically to indicate the active tab */}
     
                     {tabs.map((tab) => (
                         <button
