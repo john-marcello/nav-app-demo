@@ -1,0 +1,77 @@
+/* grid for players container */
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3.75rem;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* search row and search bar */
+.history-text {
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: -0.01em;
+    color: rgb(255, 246, 0);
+    padding-right: 0.75rem;
+    margin: 0.75rem 0.75rem 0.75rem 0;
+    text-transform: capitalize;
+}
+
+.history-text:first-child {
+    border-right: 1px solid rgb(255, 246, 0);
+}
+
+.history-text button {
+    color: rgb(255, 246, 0);
+    text-decoration: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.history-text button:hover {
+    color: #8000ff;
+    text-decoration: underline;
+}
+
+.history-row {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 60% 40%;
+    gap: 1.2rem;
+    width: 100%;
+    max-width: 90rem;
+    border-bottom: 1px solid #2c2c39;
+    margin-bottom: 2rem;
+    padding-bottom: 0.8rem;
+}
+
+.number-list {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: -0.01em;
+    color: white   ;
+    padding: 0 6rem;
+    text-transform: capitalize;
+}
+
+.number-list li {
+    color: white;
+    padding: 0 1rem 3rem;
+    text-decoration: none;
+}
+
+.number-list a {
+    color: white;
+    text-decoration: none;
+}

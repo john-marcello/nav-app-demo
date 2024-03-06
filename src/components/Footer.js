@@ -1,5 +1,5 @@
-import React from "react";
-import "../assets/styles/Footer.css";
+import React from 'react';
+import '../assets/styles/Footer.css';
 
 // renders the footer component woth logos and copyright
 function Footer() {

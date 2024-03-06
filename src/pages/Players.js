@@ -1,72 +1,115 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import '../assets/styles/Players.css';
 import axios from 'axios';
 
-import '../assets/styles/Players.css';
-import positionMapping from '../utils/positionMapping';
+import { useSearch } from '../context/SearchContext.js';
+import positionMapping from '../utils/positionMapping.js';
+import  debounce from '../utils/debounce.js';
 
 // renders the players page
 function Players() {
 
     // set up state to track the players data, loading state, and error state
-    const [data, setData] = useState({
-        players: [],
-        isLoading: true,
-        error: '',
-    });
+    // set the default state for the search query
+    const [data, setData] = useState({ players: [], isLoading: true, error: '', });
+    
 
-    // set up state for the search query
-    const [searchQuery, setSearchQuery] = useState('');
+    // get current location and create a new URLSearchParams object
+    // extract the query parameter from the search string
+    const location = useLocation(); 
+    const searchParams = new URLSearchParams(location.search); 
+    const initialSearchQuery = searchParams.get('query') || ''; 
+    
 
-    // fetch data source from the JSON file with axios get request
-    // the use effect hook triggers the fetch data function on page load
+    // set up state to track the search query
+    // useSearch hook to access the addSearchQuery function from the search context
+    const [searchQuery, setSearchQuery] = useState(initialSearchQuery);
+    const { addSearchQuery } = useSearch();
 
+    
+    // fetch data source from the JSON file with axios get request on page load
+    // dependency array is empty to prevent rerenders
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('/data.json');
-                setData({
-                    players: response.data.data,
-                    isLoading: false,
-                    error: '',
-                });
+                setData({ players: response.data.data, isLoading: false, error: '', });
             } catch (error) {
                 console.error('Error fetching data: ', error);
-                setData({
-                    players: [],
-                    isLoading: false,
-                    error: 'Error fetching data',
-                });
+                setData({ players: [], isLoading: false, error: 'Error fetching data', });
             }
         };
         fetchData();
     }, []);
 
+
+    // update the search query state when the location changes
+    // use effect hook triggers the update search query function when the location changes
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        const queryParam = searchParams.get('query');
+        if (queryParam) {
+            const decodedQueryParam = decodeURIComponent(queryParam);
+            setSearchQuery(decodedQueryParam);
+        } else {
+            setSearchQuery('');
+        }
+    }, [location.search]);
+    
+
+
+    // debounced search query function, memoize the debounced function
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const debouncedAddSearchQuery = useCallback(debounce((query) => {
+        if (query.trim()) { addSearchQuery(query); }
+    }, 1000), [addSearchQuery]);
+
+
+    // handle the search query input change
+    // update search query state and call the debounced add search query function
+    const handleSearchChange = (e) => {
+        const query = e.target.value;
+        setSearchQuery(query);
+        debouncedAddSearchQuery(query);
+    };
+
+
+    // handle the cancel button click
+    // clear the search query state
     const handleCancel = () => {setSearchQuery('');};
+
 
     // if (data.isLoading) return <div>Loading...</div>;
     if (data.error) return <div>{data.error}</div>;
 
-    // filter the players based on the search query input
-    // positionMapping is used to map the position abbreviation to the full position name
-    const filteredPlayers = data.players.filter((player) => {
-        const searchLower = searchQuery.toLowerCase();
-        const displayName = player.attributes?.display_name?.toLowerCase().includes(searchLower);
-        const market = player.attributes?.market?.toLowerCase().includes(searchLower);
-        const teamName = player.attributes?.team_name?.toLowerCase().includes(searchLower);
-        const position =positionMapping[player.attributes?.position]?.toLowerCase().includes(searchLower) ||player.attributes?.position?.toLowerCase().includes(searchLower);
 
-        return displayName || market || teamName || position;
+    // filter the players based on the search query input
+    // positionMapping to map the position abbreviation to the full position name
+    const filteredPlayers = data.players.filter((player) => {
+        const searchTerms = searchQuery.toLowerCase().split(' '); // Split search query into terms
+        const playerData = `
+            ${player.attributes?.display_name} 
+            ${player.attributes?.market} 
+            ${player.attributes?.team_name} 
+            ${positionMapping[player.attributes?.position] || player.attributes?.position}
+            `.toLowerCase();
+        return searchTerms.every(term => playerData.includes(term));
     });
 
     // render the players list or shows a no results found
     return (
         <div className='players-container'>
             <div className='search-row'>
-                <div className='sub-header'>&nbsp;</div>
+                <div className='sub-header'>
+                    <div className='sub-text'>Search by play, market, team, or position</div>
+                    <div className='sub-text'>
+                    <NavLink to='/search-history' className={({ isActive }) => isActive ? 'active' : 'sub-link'}>Search History</NavLink>                    </div>
+                </div>
                 <div>
-                    <div class='search-bar'>
-                        <div class='search-wrapper'>
-                            <div class='search-icon'>
+                    <div className='search-bar'>
+                        <div className='search-wrapper'>
+                            <div className='search-icon'>
                                 <svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'>
                                     <g transform='translate(5 4)' stroke='#FFF' stroke-width='1.5' fill='none' fill-rule='evenodd' opacity='0.5'>
                                         <circle cx='6.5' cy='6.5' r='6.5'></circle>
@@ -74,16 +117,16 @@ function Players() {
                                     </g>
                                 </svg>
                             </div>
-                            <div class='search-input'>
+                            <div className='search-input'>
                                 <input
                                     placeholder='Search'
                                     type='text'
                                     value={searchQuery}
-                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    onChange={handleSearchChange}
                                 />
                             </div>
                         </div>
-                        <div class='cancel' onClick={handleCancel}>Cancel</div>
+                        <div className='cancel' onClick={handleCancel}>Cancel</div>
                     </div>
                 </div>
             </div>
@@ -155,7 +198,7 @@ function Players() {
             ) : (
                 <div className='not-found'>
                     <img
-                        class='nrf'
+                        className='nrf'
                         src='https://app.prizepicks.com/7478c2713b57c5acff99.png'
                         alt='Magnifying Glass'
                     />

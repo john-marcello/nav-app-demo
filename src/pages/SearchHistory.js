@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import '../assets/styles/SearchHistory.css';
+
+import { NavLink } from 'react-router-dom';
 import { useSearch } from '../context/SearchContext.js';
 
 // renders the search history page
@@ -8,15 +10,26 @@ function SearchHistory() {
 
     return (
         <div>
-            <h2>Search History</h2>
-            <ul>
-                {searchHistory.map((query, index) => (
-                    <li key={index}>
-                        <Link to={{ pathname: '/players', search: `?query=${query}` }}>{encodeURIComponent(query)}</Link>
-                    </li>
-                ))}
-            </ul>
-            <button onClick={resetHistory}>Reset History</button>
+
+            <div className='history-container'>
+                <div className='history-row'>
+                    <div className='history-header'>
+                        <div className='history-text'>20 Most Recent Searches</div>
+                        <div className='history-text'>
+                            <button className='history-button' onClick={resetHistory}>Reset History</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='history-row'>
+                    <ol className='number-list'>
+                    {searchHistory.map((query, index) => (
+                        <li key={index}>
+                            <NavLink to={{ pathname: '/players', search: `?query=${encodeURIComponent(query)}` }}>{query}</NavLink>
+                        </li>
+                    ))}
+                    </ol>
+                </div>
+            </div>         
         </div>
     );
 }

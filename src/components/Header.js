@@ -1,8 +1,8 @@
-import React from "react";
-import "../assets/styles/Header.css";
+import React from 'react';
+import '../assets/styles/Header.css';
 
-import { NavLink } from "react-router-dom";
-import Logo from "../assets/images/logo.svg";
+import { NavLink } from 'react-router-dom';
+import Logo from '../assets/images/logo.svg';
 
 
 // renders the header componennt with logo, nav, and buttons
@@ -16,10 +16,10 @@ function Header() {
                         <img className='nav-logo-img' src={Logo} alt='logo' />
                     </a>
                     <nav className='nav-bar'>
-                        <NavLink className='nav-link' activeClassName="active" to='/available'>Where To Play?</NavLink>
-                        <NavLink className='nav-link' activeClassName="active"to='/players'>Meet The Players</NavLink>
-                        {/* <NavLink className='nav-link' activeClassName="active"to='/search-history'>Search History</NavLink> */}
-                        <NavLink className='nav-link' activeClassName="active"to='/help'>Help Center</NavLink>
+                        <NavLink to='/available' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Where To Play?</NavLink>
+                        <NavLink to='/players' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Meet The Players</NavLink>
+                        <NavLink to='/search-history' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Search History</NavLink>
+                        <NavLink to='/help' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Help Center</NavLink>
                     </nav>
                     <div className='nav-buttons'>
                         <a className='nav-primary-btn' href='https://app.prizepicks.com/sign-up' target='_blank' rel='noreferrer'>Sign Up</a>

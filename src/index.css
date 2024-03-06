@@ -11,7 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     height: 100%;
     margin: 0;
-    font-family: "Roboto",sans-serif;
+    font-family: Roboto,sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     color: #fbf9ff;

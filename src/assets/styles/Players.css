@@ -10,6 +10,34 @@
 }
 
 /* search row and search bar */
+
+.sub-text {
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: -0.01em;
+    color: rgb(255, 246, 0);
+    padding-right: 0.75rem;
+    margin: 0.75rem 0.75rem 0.75rem 0;
+    text-transform: capitalize;
+}
+
+.sub-text:first-child {
+    border-right: 1px solid rgb(255, 246, 0);
+}
+
+.sub-text a {
+    color: rgb(255, 246, 0);
+    text-decoration: none;
+}
+
+.sub-text a:hover {
+    color: #8000ff;
+    text-decoration: underline;
+}
+
 .search-row {
     display: grid;
     grid-template-rows: auto auto;
@@ -59,7 +87,7 @@
     -webkit-box-align: center;
     align-items: center;
     padding: 0 1rem;
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.4rem;
@@ -78,10 +106,10 @@
     height: 1.4rem;
     padding: 0.5rem;
     margin: 0;
-    font-family: 'Encode Sans', sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     letter-spacing: 0.01rem;
-    color: #fbf9ff;;
+    color: #fbf9ff;
     border: 0px;
     box-sizing: content-box;
     background: none;
@@ -95,7 +123,7 @@
     align-items: center;
     height: 3rem;
     margin: 0 1rem 1rem;
-    font-family: 'Encode Sans', sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
     color: rgb(255, 246, 0);
@@ -112,7 +140,7 @@
     margin: 0;
     padding: 0;
     min-height: 70vh;
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -292,7 +320,7 @@
 }
 
 .more-less button:first-child::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     right: 0;
@@ -325,7 +353,7 @@
 }
 
 .not-found h1 {
-    font-family: "Encode Sans", sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2remm;
@@ -334,7 +362,7 @@
 
 .not-found span {
     color: #aaaaaa;
-    font-family: "Encode Sans", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     line-height: 20px;
 }
