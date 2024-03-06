@@ -31,7 +31,10 @@ function Home() {
                     </h1>
                 </div>
                 <div className="padding-divider"></div>
-                <a className="home-button" href="/boards">Play Now</a>
+                <div className="padding-divider"></div>
+                <a className="home-button" href="/available">Where To Play?</a>
+                <div className="padding-divider"></div>
+                <div className="padding-divider"></div>
             </div>    
         </>
     );        

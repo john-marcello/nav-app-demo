@@ -18,8 +18,7 @@ function Header() {
                     <nav className='nav-bar'>
                         <Link className='nav-link' to='/available'>Where To Play?</Link>
                         <Link className='nav-link' to='/players'>Meet The Players</Link>
-                        <Link className='nav-link' to='/promos'>Recurring Promos</Link>
-                        <a className='nav-link' href='https://www.prizepicks.com/help-center' target='_blank' rel='noreferrer'>Help Center</a>
+                        <Link className='nav-link' to='/help'>Help Center</Link>
                     </nav>
                     <div className='nav-buttons'>
                         <a className='nav-primary-btn' href='https://app.prizepicks.com/sign-up' target='_blank' rel='noreferrer'>Sign Up</a>

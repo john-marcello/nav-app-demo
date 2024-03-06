@@ -14,7 +14,7 @@ import "./assets/styles/Main.css";
 import Home from "./pages/Home.js";
 import Available from "./pages/Available.js";
 import Players from "./pages/Players.js";
-import Promos from "./pages/Promos.js";
+import Help from "./pages/Help.js";
 
 
 // renders the app with fixed header and scrollable main and footer sections
@@ -27,7 +27,7 @@ function App() {
                 <section className='main-wrapper'>
                     <main>
                         <Routes>
-                            <Route path='/promos' element={<Promos />} />
+                            <Route path='/help' element={<Help />} />
                             <Route path='/players' element={<Players />} />
                             <Route path='/available' element={<Available />} />
                             <Route path='/' element={<Home />} />
