@@ -46,8 +46,8 @@ function Available() {
                 <div className='tab-list'>
                     
                     {/* map through the tabs array and create the list of buttons */}
-                    {/* triggeer the event handler to set the corresponding tab as the active tab */}
-                    {/* update the class name dynamically to indicat ethe active tab */}
+                    {/* trigger the event handler to set the corresponding tab as the active tab */}
+                    {/* update the class name dynamically to indicate the active tab */}
     
                     {tabs.map((tab) => (
                         <button

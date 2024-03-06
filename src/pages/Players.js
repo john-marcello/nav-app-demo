@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import positionMapping from "../utils/positionMapping";
 
 // renders the players page
 function Players() {
@@ -16,7 +17,7 @@ function Players() {
 
     // fetch data from the JSON file or API with axios get request
     // the try block returns a list of players and their attributes
-    // the catch blocl logs an error if the data cannot be fetched
+    // the catch block logs an error if the data cannot be fetched
     // the use effect hook triggers the fetch data function on page load
     useEffect(() => {
         const fetchData = async () => {
@@ -77,7 +78,7 @@ function Players() {
                                 </picture>
                                 <h3 className='player-name'>{player.attributes?.display_name}</h3>
                                 <p className='player-team'>{player.attributes?.market}{' '}{player.attributes?.team_name}</p>
-                                <p className='player-position'>{player.attributes?.display_name}</p>
+                                <p className='player-position'>{positionMapping[player.attributes?.position] || player.attributes?.position}</p>
                             </div>
                         </div>
                         <div className='projected-score'>
