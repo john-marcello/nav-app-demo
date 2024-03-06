@@ -35,6 +35,7 @@
     border: none;
     background: #1f202d;
     color: #fbf9ff;
+    border-radius: 0.25rem;;
 }
   
 .button-active {

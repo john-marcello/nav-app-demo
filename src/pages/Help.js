@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/Help.css";
 
-import VideoEmbed from "../utils/VideoEmbed";
+import VideoEmbed from "../components/VideoEmbed";
 
 // renders the about page
 function Help() {

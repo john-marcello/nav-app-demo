@@ -10,10 +10,14 @@ import Footer from "./components/Footer.js";
 import "./App.css";
 import "./assets/styles/Main.css";
 
+//context
+import { SearchProvider } from './context/SearchContext.js';
+
 // pages
 import Home from "./pages/Home.js";
 import Available from "./pages/Available.js";
 import Players from "./pages/Players.js";
+import SearchHistory from "./pages/SearchHistory.js";
 import Help from "./pages/Help.js";
 
 
@@ -22,20 +26,23 @@ import Help from "./pages/Help.js";
 function App() {
     return (
         <Router>
-            <div className='page-wrapper'>
-                <Header />           
-                <section className='main-wrapper'>
-                    <main>
-                        <Routes>
-                            <Route path='/help' element={<Help />} />
-                            <Route path='/players' element={<Players />} />
-                            <Route path='/available' element={<Available />} />
-                            <Route path='/' element={<Home />} />
-                        </Routes>
-                    </main>
-                    <Footer />
-                </section>
-            </div>
+            <SearchProvider>
+                <div className='page-wrapper'>
+                    <Header />           
+                    <section className='main-wrapper'>
+                        <main>
+                            <Routes>
+                                <Route path='/help' element={<Help />} />
+                                <Route path='/search-history' element={<SearchHistory />} />
+                                <Route path='/players' element={<Players />} />
+                                <Route path='/available' element={<Available />} />
+                                <Route path='/' element={<Home />} />
+                            </Routes>
+                        </main>
+                        <Footer />
+                    </section>
+                </div>
+            </SearchProvider>
         </Router>
     );
 }

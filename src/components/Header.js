@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/styles/Header.css";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../assets/images/logo.svg";
 
 
@@ -16,9 +16,10 @@ function Header() {
                         <img className='nav-logo-img' src={Logo} alt='logo' />
                     </a>
                     <nav className='nav-bar'>
-                        <Link className='nav-link' to='/available'>Where To Play?</Link>
-                        <Link className='nav-link' to='/players'>Meet The Players</Link>
-                        <Link className='nav-link' to='/help'>Help Center</Link>
+                        <NavLink className='nav-link' activeClassName="active" to='/available'>Where To Play?</NavLink>
+                        <NavLink className='nav-link' activeClassName="active"to='/players'>Meet The Players</NavLink>
+                        {/* <NavLink className='nav-link' activeClassName="active"to='/search-history'>Search History</NavLink> */}
+                        <NavLink className='nav-link' activeClassName="active"to='/help'>Help Center</NavLink>
                     </nav>
                     <div className='nav-buttons'>
                         <a className='nav-primary-btn' href='https://app.prizepicks.com/sign-up' target='_blank' rel='noreferrer'>Sign Up</a>

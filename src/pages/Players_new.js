@@ -1,24 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { useLocation } from 'react-router-dom';
+import '../assets/styles/Players.css';
 import axios from 'axios';
 
-import '../assets/styles/Players.css';
-import positionMapping from '../utils/positionMapping';
+import { useSearch } from '../context/SearchContext.js';
+import positionMapping from '../utils/positionMapping.js';
+import  debounce from '../utils/debounce.js';
 
 // renders the players page
 function Players() {
+
     // set up state to track the players data, loading state, and error state
     // set the initial state of the players data to an empty array
     // set the initial state of the loading state to true
     // set the initial state of the error state to an empty string
-    const [data, setData] = useState({
-        players: [],
-        isLoading: true,
-        error: '',
-    });
+    const [data, setData] = useState({ players: [], isLoading: true, error: '', });
+    
 
-    // Add a new state for the search query
-    const [searchQuery, setSearchQuery] = useState('');
+    // get the current location
+    // create a new URLSearchParams object
+    // extract the query parameter from the search string
+    const location = useLocation(); 
+    
+    const searchParams = new URLSearchParams(location.search); 
+    
+    const initialSearchQuery = searchParams.get('query') || ''; 
+    
 
+    // set up state to track the search query
+    // set the initial state of the search query to the query parameter from the search string
+    // use the useSearch hook to access the addSearchQuery function from the search context
+    // create a function to handle the search input change and add the search query to the history
+    const [searchQuery, setSearchQuery] = useState(initialSearchQuery);
+    
+    const { addSearchQuery } = useSearch();
+
+    
     // fetch data from the JSON file or API with axios get request
     // the try block returns a list of players and their attributes
     // the catch block logs an error if the data cannot be fetched
@@ -27,32 +44,48 @@ function Players() {
         const fetchData = async () => {
             try {
                 const response = await axios.get('/data.json');
-                setData({
-                    players: response.data.data,
-                    isLoading: false,
-                    error: '',
-                });
+                setData({ players: response.data.data, isLoading: false, error: '', });
             } catch (error) {
                 console.error('Error fetching data: ', error);
-                setData({
-                    players: [],
-                    isLoading: false,
-                    error: 'Error fetching data',
-                });
+                setData({ players: [], isLoading: false, error: 'Error fetching data', });
             }
         };
-
         fetchData();
     }, []);
 
+
+    // update the search query state when the location changes
+    // the search query is extracted from the search string
+    // the search query is set as the new state
+    // the use effect hook triggers the update search query function when the location changes
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        const query = searchParams.get('query') || '';
+        setSearchQuery(query);
+    }, [location.search]); 
+
+    // create a debounced version of the addSearchQuery function
+    const debouncedAddSearchQuery = useCallback(debounce((query) => {
+        if (query.trim()) {
+            addSearchQuery(query);
+        }
+    }, 2000), [addSearchQuery]);
+
+    const handleSearchChange = (e) => {
+        const query = e.target.value;
+        setSearchQuery(query);
+        debouncedAddSearchQuery(query);
+    };
+
+    // create a function to handle the cancel button click
     const handleCancel = () => {setSearchQuery('');};
 
     // if the data is loading, display a loading message
+    // if there is an error, display the error message
     // todo: the loading state is indicator is temporarily disabled to prevent FOUC
     // if (data.isLoading) return <div>Loading...</div>;
-
-    // if there is an error, display the error message
     if (data.error) return <div>{data.error}</div>;
+
 
     // filter the players based on the search query input
     // the search query is converted to lowercase to help with the search
@@ -67,6 +100,7 @@ function Players() {
 
         return displayName || market || teamName || position;
     });
+
 
     // render the players list
     // if the filtered players list is greater than 0, render the players list
@@ -91,7 +125,7 @@ function Players() {
                                     placeholder='Search'
                                     type='text'
                                     value={searchQuery}
-                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    onChange={handleSearchChange}
                                 />
                             </div>
                         </div>

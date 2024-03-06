@@ -61,8 +61,22 @@
     position: relative;
 }
 
+.nav-link.active {
+    color: white;
+}
+
+.nav-link.active::before {
+    content: "";
+    background: #8000ff;
+    width: 84%;
+    height: 4px;
+    position: absolute;
+    bottom: -0.3rem;
+    margin: 0 4%;
+}
+
 .nav-link:hover {
-    color: #ddd;
+    color: white;
 }
 
 /* right column for buttons */
