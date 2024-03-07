@@ -1,13 +1,25 @@
-# Prize Picks Clone
+# PrizePicks Clone
 
 This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Many areas could be refactored to be more DRY, particularly in the css files, however that work can be saved for later. Right now the most important outcome is to deliver a working demo.
+
+## TLDR
+
+This app demonstrates several UX/UI concepts and more advanced React methods like `useState`, `useEffect`, `useCallback`, and the `React Context API`. Data was accessed via an `Axios` get request and navigation is handled by `React Router DOM`. 
+
+The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were used, however at this time full responsiveness has not been implemented and there is not a mobile nav menu. The app is best viewed on a desktop/laptop browser.
+
+The **Home** page is a simple landing page and the **Where To Play** page has the interactive map. The **Meet The Players** page is used to demonstrate search functionality, and the **Search History** page is used to store the last 20 search queries using Context for state menagement. The **Help page** in a simple fun page with a message that matters.
 
 ## Run The App
 
 - Fork or clone the repo to your local environment.
+  
 - In the project directory, run `npm start` to start the app in the development mode.
+  
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  
 - The page will reload when you make changes. You may also see any lint errors in the console.
+  
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Layout with HTML and CSS
@@ -42,11 +54,13 @@ This project is intended for demonstration purposes only. The goal is to showcas
 
   - The filter removed that original `[data]` array.
 
-  - Then tthe `included` array was renamed to now be called `[data]`.
+  - Then the `included` array was renamed to now be called `[data]`.
 
   - This data set targets the `"type": "new_player"` objects to access player profile data.
  
-- The extracted data was save locally in the `public` directory as `data.json` to be used for development purposes.
+  - A random number generator helper function was added to populate the score attribute.
+ 
+- The extracted data was saved locally in the `public` directory as `data.json` to be used for development purposes.
 
 - Data is accessed utlizing `Axios` to make a `get` request to the `data.json` file.
 
@@ -67,19 +81,33 @@ This project is intended for demonstration purposes only. The goal is to showcas
 **Players Page**
 - `useState` is utilized to set up state to track the player's data, loading state, and error state.
 
-  - We set the initial state of the players data to an empty array.
-
-   - We wet the initial state of the loading state to true.
-
-   - And, we set the initial state of the error state to an empty string.
+- `useState` is also utilized to set up state to track the search query.
  
 - `useEffect` is utilized to fetch data from the JSON file with an `axios` get request.
 
-  - A `try` block returns a list of players and their attributes.
+- Some logic was added to get current location and create a new object to extract the query parameter from the search string.
 
-  - A `catch` block logs an error if the data cannot be fetched.
+-`useEffect` is utilized  to update the search query state when the location changes.
 
-  - In the `useEffect` hook triggers the an empty dependency array limits the requests and prevents re-renders. 
+- A debounce function was added so that search history only get tracked after a 2 second pause in the input field.
+
+- An event handler was added to handle the search query input change, update search query state and call the debounced query function.
+
+- An event handler was added to the cancel button click to clear the search query state.
+
+- The filter was enhanced to filter the players based on the search query input
+
+**Search History Page**
+- A `SearchContext` file was implemented to `createContext` with a custom hook and set up a `SearchProvider` that wraps the app with the search content.
+
+- This helps search queries registered on the `Players.js` to be stored in the `SearchHistory.js` page. The most recent 20 search strings are stored.
+
+- `localStorage` was utlized so that the search history is pesistent when the browser is refreshed. History can be reset by clicking a button on the page.
+
+- Clicking a link on the `SearchHistory.js` page drives the user back to the `Players.js` page and loads the historical search params.
+
+**Help Page**
+- A simple help page was added with a fun message and an embedded video using `react-youtube`.
 
 ## Directory Structure
 -public
@@ -92,19 +120,26 @@ This project is intended for demonstration purposes only. The goal is to showcas
     - images
       - logo.svg
     - styles
-      - Header.css
-      - Footer.css
-      - Main.css
-      - Home.css
       - Available.css
+      - Footer.css
+      - Header.css
+      - Help
+      - Home.css
+      - Main.css
       - Players.css
+      - SearchHistory.css
   - components
-    - Header.js
     - Footer.js
+    - HeadereoEmbed.js
+    - Vid
+  - context
+    - SearchContext.js
   - pages
-    - Home.js
     - Available.js
+    - Help.js
+    - Home.js
     - Players.js
+    - SearchHistory.js
   - App.js
   - App.css
   - index.js
