@@ -1,10 +1,14 @@
-# Prize Picks Clone
+# PrizePicks Clone
 
 This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Many areas could be refactored to be more DRY, particularly in the css files, however that work can be saved for later. Right now the most important outcome is to deliver a working demo.
 
 ## TLDR
 
-This app demonstrates several UX/UI concepts and more advance React methods like useState, useEffect, useCallback, and the React Context API. Data was accessed via an Axios get request and navigation in handled by React Router DOM. The site is relatively mobile responsive because CSS Grid and Flexbox were used, however at this time for responsive has not been implemented and there is not a mobile nav menu. The app is best view on desktop/laptop browser.
+This app demonstrates several UX/UI concepts and more advance React methods like useState, useEffect, useCallback, and the React Context API. Data was accessed via an Axios get request and navigation in handled by React Router DOM. 
+
+The site is relatively mobile responsive because CSS Grid and Flexbox were used, however at this time for responsive has not been implemented and there is not a mobile nav menu. The app is best view on desktop/laptop browser.
+
+The home page is a simple landing page, the Where To Play page has an interactive map. The Meet The Team page is used to demonstrated search functionality, and Search History page is used to store the last 20 search queries using Context for state menagement. The Help page in a simple fun page with a message that matters.
 
 ## Run The App
 
