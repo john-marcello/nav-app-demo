@@ -2,13 +2,12 @@ import React from 'react';
 import '../assets/styles/Home.css';
 
 // renders the home page
-// todo: buttons can be styled components in the future
 function Home() {
     return (      
         <>
-            <div className='container-primary'>
-                <p className='subheading is-hero'>Daily Fantasy Made Easy<br /></p>
-                <div className='is-hero'>
+            <div className='home-wrapper'>
+                <p className='home-subtext'>Daily Fantasy Made Easy<br /></p>
+                <div className='home-hero'>
                     <img className='hero-cash' 
                         src='https://assets-global.website-files.com/64b5f8bfc12b3ec8aef889d7/64deafcd3f4453c7e7362ef7_money-bag-hero.png' 
                         style={{ 
@@ -29,11 +28,9 @@ function Home() {
                         <span className='dollar-sign'>0</span>
                     </h1>
                 </div>
-                <div className='padding-divider'></div>
-                <div className='padding-divider'></div>
+                <div className='home-divider'></div>
                 <a className='home-button' href='/available'>Where To Play?</a>
-                <div className='padding-divider'></div>
-                <div className='padding-divider'></div>
+                <div className='home-divider'></div>
             </div>    
         </>
     );        

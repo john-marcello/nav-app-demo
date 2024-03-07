@@ -1,12 +1,12 @@
 import React, { createContext, useContext, useState } from 'react';
 
-// context for the search history
-// custom hook to use the search context
+// create context to store search history
 const SearchContext = createContext();
 
+// export custom hook to use the search context
 export const useSearch = () => useContext(SearchContext);
 
-// provider component to wrap the app with the search context
+// export provider wrap the app with search context
 export const SearchProvider = ({ children }) => {
     
     // set up state to track the search history
@@ -15,7 +15,7 @@ export const SearchProvider = ({ children }) => {
         return savedHistory ? JSON.parse(savedHistory) : [];
     });
 
-    // add a new search query to the search history
+    // add search query to the search history and set local storage
     const addSearchQuery = (query) => {
         setSearchHistory(prevHistory => {
             const updatedHistory = [query, ...prevHistory].slice(0, 20);
@@ -24,13 +24,13 @@ export const SearchProvider = ({ children }) => {
         });
     };
 
-    // reset the search history
+    // reset search history
     const resetHistory = () => {
         setSearchHistory([]);
         localStorage.removeItem('searchHistory');
     };
 
-    // provide the search history and the addSearchQuery to the app
+    // provide search history, addSearchQuery, and resetHistory to the app
     return (
         <SearchContext.Provider value={{ searchHistory, addSearchQuery, resetHistory }}>
             {children}

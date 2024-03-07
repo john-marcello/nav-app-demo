@@ -1,8 +1,58 @@
-/* page wrapper */
-.page-wrapper {
+/* common wrappers */
+.page-wrapper,
+.nav-wrapper,
+.main-wrapper,
+.footer-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
+    padding: 2.25rem 3.75rem;
+    background-color: #050614;
 }
+
+.nav-wrapper,
+.main-wrapper,
+.footer-wrapper {
+    max-width: 100rem;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    padding: 0;
+}
+/* nav wrapper fixed position */
+.nav-wrapper {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+/* main wrapper is scrollable */
+.main-wrapper {
+    width: 100%;
+    padding-top: 3.75rem;
+    position: relative;
+    top: 100px;
+    z-index: 0;
+}
+
+/* footer wrapper */
+main, footer {
+    width: 100%;
+}
+
+.footer-wrapper {
+    padding: 0 2.25rem;
+}
+
+.line-divider {
+    width: 100%;
+    margin-bottom: 2.25rem;
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+/* media queries for mobile */

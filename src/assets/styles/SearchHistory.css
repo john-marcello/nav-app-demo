@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 3.75rem;
     width: 100%;
     min-height: 100vh;
 }
@@ -72,6 +71,33 @@
 }
 
 .number-list a {
-    color: white;
+    color: #8000ff;
     text-decoration: none;
+}
+
+.number-list a:hover {
+    color: #8000ff;
+    text-decoration: underline;
+}
+
+/* no results found */
+.not-found {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.not-found img {
+    margin: 0 auto;
+    width: 9rem;
+}
+
+.not-found h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2remm;
+    letter-spacing: -0.01em;
 }

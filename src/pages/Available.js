@@ -11,7 +11,7 @@ const tabs = [
     },
     { 
         id: 2, 
-        alt: "Pick \'Em", 
+        alt: "Pick 'Em", 
         text: "Select more or less on 2-6 player projections, choose Flex Play (1 or 2 picks can lose) or Power Play (all must win) and then lock in your entry for big payouts.", 
         image: "https://assets-global.website-files.com/64b5f8bfc12b3ec8aef889d7/65e14386afcfa48907ecff4f_Pick%20%27Em%20Map.png", 
     },
@@ -33,17 +33,16 @@ const tabs = [
 // demonstrates the use of state to track the active tab
 
 function Available() {
-    // set up state and set the active tab to the first tab initial load
+    // set state for the active tab and initialize first tab as active
     const [activeTab, setActiveTab] = useState(tabs[0]);
 
     return (
         <>
-            <div className='tab-container'>
-                <h1 className='header-available'>PrizePicks is available in <span className='text-color-green'>32</span> States, Washington DC, and Canada</h1>
-                <p className='text-description'>If your state is highlighted below, <span className='text-color-green'>LFG!</span></p>
-                <div className='padding-divider'></div>
+            <div className='available-container'>
+                <h1 className='available-hero'>PrizePicks is available in <span className='text-color-green'>32</span> States, Washington DC, and Canada</h1>
+                <p className='available-text'>If your state is highlighted below, <span className='available-green'>LFG!</span></p>
+                <div className='available-divider'></div>
                 <div className='tab-list'>
-    
                     {tabs.map((tab) => (
                         <button
                             key={tab.id}
@@ -53,21 +52,20 @@ function Available() {
                             {tab.alt}
                         </button>
                     ))}
-    
                 </div>
-                <div className='padding-divider'></div>
-                <div className='text-wrapper'>
+                <div className='available-divider'></div>
+                <div className='available-subtext'>
                     <p className='text-description'>{activeTab.text }</p>
                 </div>
-                <div className='padding-divider'></div>
+                <div className='available-divider'></div>
                 <img
                     className='availability-map'
                     src={activeTab.image}
                     alt={activeTab.alt}
                 />
-                <div className='padding-divider'></div>
-                <div className='padding-divider'></div>
-                <p className='text-description'>*Available in all of Canada, except for Ontario.</p>
+                <div className='bottom-divider'></div>
+                <p className='available-disclaimer'>*Available in all of Canada, except for Ontario.</p>
+                <div className='bottom-divider'></div>       
             </div>
         </>
     );

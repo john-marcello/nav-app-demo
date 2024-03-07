@@ -1,42 +1,47 @@
 /* containers and hero */
-.container-primary {
+.home-wrapper {
     width: 100%;
-    max-width: 88rem;
+    max-width: 80rem;
+    min-height: 100vh;
+    padding-top: 1.5rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
 }
 
-.subheading {
-    font-family: 'Encode Sans Expanded','Roboto', sans-serif;
+.home-subtext{
+    font-family: 'Encode Sans Expanded',Roboto, sans-serif;
     font-size: 1.75rem;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     color: #adacb5;
+    position: relative;
+    margin: 0 auto;
 }
 
-.is-hero {
+.home-hero {
     position: relative;
     margin: 0 auto;
 }
 
 .hero-cash {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
     position: absolute;
-    bottom: -3rem;
-    left: 12rem;
+    bottom: -1.9rem;
+    left: 6.25rem;
 }
 
 .hero-text {
-    font-family: 'Encode Sans Expanded','Roboto', sans-serif;
+    font-family: 'Encode Sans Expanded',Roboto, sans-serif;
     font-size: 6.5rem;
     font-weight: 800;
     font-kerning: none;
     line-height: 0.95;
-    letter-spacing: 0.1rem;
+    letter-spacing: -0.1rem;
     text-transform: uppercase;
     margin: 0.5rem 0;
 }
@@ -47,18 +52,21 @@
 
 .dollar-sign {
     color: #6eff00;
-    margin-left: -0.3rem;
+    margin-left: 0.3rem;
     margin-right: -0.5rem;
 }
 
 .dollar-number-1 {
     color: #6eff00;
-    margin-left: 0;
+    margin-left: 0.3rem;
     margin-right: -0.6rem;
 }
 
-.padding-divider {
-    padding: 2rem;
+.home-divider {
+    width: 100%;
+    border: 1px solid transparent;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .home-button {

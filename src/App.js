@@ -2,13 +2,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// components
-import Header from "./components/Header.js";
-import Footer from "./components/Footer.js";
-
 // styles
 import "./App.css";
-import "./assets/styles/Main.css";
 
 //context
 import { SearchProvider } from './context/SearchContext.js';
@@ -20,9 +15,14 @@ import Players from "./pages/Players.js";
 import SearchHistory from "./pages/SearchHistory.js";
 import Help from "./pages/Help.js";
 
+// components
+import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 
-// renders the app with fixed header and scrollable main and footer sections
-// uses react-router-dom to manage browser routes
+// fixed header and scrollable main sections
+// search provider for context state management
+// using react-router-dom for routing
+
 function App() {
     return (
         <Router>
