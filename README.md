@@ -4,7 +4,7 @@ This project is intended for demonstration purposes only. The goal is to showcas
 
 ## TLDR
 
-This app demonstrates several UX/UI concepts and more advance React methods like useState, useEffect, useCallback, and the React Context API. Data was accessed via an Axios get request and navigation in handled by React Router DOM. 
+This app demonstrates several UX/UI concepts and more advanced React methods like useState, useEffect, useCallback, and the React Context API. Data was accessed via an Axios get request and navigation in handled by React Router DOM. 
 
 The site is relatively mobile responsive because CSS Grid and Flexbox were used, however at this time for responsive has not been implemented and there is not a mobile nav menu. The app is best view on desktop/laptop browser.
 
