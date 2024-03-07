@@ -8,9 +8,9 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 
 The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were used, however at this time full responsiveness has not been implemented and there is not a mobile nav menu. The app is best viewed on a desktop/laptop browser.
 
-- Level I = The **Home** page is a simple landing page to show some basic HTML/CSS
+- Level I = The **Home** page is a simple landing page to show off some UX/UI skills utilizing HTML and CSS.
 
-- Level II = The **Where To Play** page has the interactive map to demostrate some basic state and tabbed browsing
+- Level II = The **Where To Play** page has the interactive map to demostrate some basic state and tabbed browsing.
 
 - Level III = The **Meet The Players** page is used to demonstrate conencting to a data source and manipulating data before displaying it to the UI. Search functionality is implemented with a debounce function and leverages some local storage and session storage for persistance. 
   
