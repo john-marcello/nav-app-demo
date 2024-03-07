@@ -105,7 +105,7 @@ The **Home** page is a simple landing page and the **Where To Play** page has th
 - Clicking a link on the `SearchHistory.js` page drives the user back to the `Playersjs` page utilizing the search parameters to load the historical search params.
 
 **Help Page**
-- A simple help page was added with a fun message and an embedded image using `react-youtube`.
+- A simple help page was added with a fun message and an embedded video using `react-youtube`.
 
 ## Directory Structure
 -public
