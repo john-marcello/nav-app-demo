@@ -96,13 +96,13 @@ The **Home** page is a simple landing page and the **Where To Play** page has th
 - The filter was enhanced to filter the players based on the search query input
 
 **Search History Page**
-- A `SearchContext` file was implemented to `createContext` with a custom hook and `SearchProvider` that wraps the app with the search content.
+- A `SearchContext` file was implemented to `createContext` with a custom hook and set up a `SearchProvider` that wraps the app with the search content.
 
-- This helps search queries registered on the `Players.js` to be stored in the `SearchHistory.js page. The most recent 20 search strings are stored.
+- This helps search queries registered on the `Players.js` to be stored in the `SearchHistory.js` page. The most recent 20 search strings are stored.
 
 - `localStorage` was utlized so that the search history is pesistent when the browser is refreshed. History can be reset by clicking a button on the page.
 
-- Clicking a link on the `SearchHistory.js` page drives the user back to the `Playersjs` page utilizing the search parameters to load the historical search params.
+- Clicking a link on the `SearchHistory.js` page drives the user back to the `Players.js` page and loads the historical search params.
 
 **Help Page**
 - A simple help page was added with a fun message and an embedded video using `react-youtube`.
