@@ -12,7 +12,7 @@ The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were u
 
 - Level II = The **Where To Play** page has the interactive map to demostrate some basic state and tabbed browsing.
 
-- Level III = The **Meet The Players** page is used to demonstrate conencting to a data source and manipulating data before displaying it to the UI. Search functionality is implemented with a debounce function and leverages some local storage and session storage for persistance. 
+- Level III = The **Meet The Players** page demonstrate to a data source and manipulating data. Search functionality is implemented with a debounce function. Local storage and session storage are used for persistance. 
   
 - Level IV = The **Search History** page is used to store the last 20 search queries using the Context API for state menagement between two pages.
 
@@ -133,7 +133,6 @@ The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were u
       - Header.css
       - Help
       - Home.css
-      - Main.css
       - Players.css
       - SearchHistory.css
   - components
