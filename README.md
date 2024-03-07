@@ -54,11 +54,13 @@ The **Home** page is a simple landing page and the **Where To Play** page has th
 
   - The filter removed that original `[data]` array.
 
-  - Then tthe `included` array was renamed to now be called `[data]`.
+  - Then the `included` array was renamed to now be called `[data]`.
 
   - This data set targets the `"type": "new_player"` objects to access player profile data.
  
-- The extracted data was save locally in the `public` directory as `data.json` to be used for development purposes.
+  - A random number generator helper function was added to populate the score attribute.
+ 
+- The extracted data was saved locally in the `public` directory as `data.json` to be used for development purposes.
 
 - Data is accessed utlizing `Axios` to make a `get` request to the `data.json` file.
 
