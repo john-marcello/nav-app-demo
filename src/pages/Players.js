@@ -113,14 +113,15 @@ return (
                     <div className='search-wrapper'>
                         <div className='search-icon'>
                             <svg width='24' height='24' xmlns='http://www.w3.org/2000/svg'>
-                                <g transform='translate(5 4)' stroke='#FFF' stroke-width='1.5' fill='none' fill-rule='evenodd' opacity='0.5'>
+                                <g transform='translate(5 4)' stroke='#FFF' strokeWidth='1.5' fill='none' fillRule='evenodd' opacity='0.5'>
                                     <circle cx='6.5' cy='6.5' r='6.5'></circle>
-                                    <path stroke-linecap='round' stroke-linejoin='round' d='m11 12 2.955 3.289'></path>
+                                    <path strokeLinecap='round' strokeLinejoin='round' d='m11 12 2.955 3.289'></path>
                                 </g>
                             </svg>
                         </div>
                         <div className='search-input'>
                             <input
+                                id="search"
                                 placeholder='Search'
                                 type='text'
                                 value={searchQuery}
@@ -148,7 +149,7 @@ return (
                                             <path
                                                 d='M4.75 8h2v12h-2zm5-3h2v15h-2zm5 10h2v5h-2zm5-4h2v9h-2z'
                                                 fill='#FFF'
-                                                fill-rule='evenodd'
+                                                fillRule='evenodd'
                                             ></path>
                                         </svg>
                                     </div>

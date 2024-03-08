@@ -56,3 +56,8 @@ main, footer {
 }
 
 /* media queries for mobile */
+@media (max-width: 1024px) {
+    .nav-container {
+        grid-template-columns: auto auto;
+    }
+}
