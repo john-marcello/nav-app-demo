@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/styles/Header.css';
 import { NavLink } from 'react-router-dom';
 import Logo from '../assets/images/logo.svg';
@@ -6,6 +6,16 @@ import Logo from '../assets/images/logo.svg';
 function Header() {
     const [isMobile, setIsMobile] = useState(false);
     const handleMobile = () => setIsMobile(!isMobile);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1024) {
+                setIsMobile(false);
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
         <>
@@ -34,7 +44,7 @@ function Header() {
                         <NavLink to='/players' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={handleMobile}>Meet The Players</NavLink>
                         <NavLink to='/search-history' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={handleMobile}>Search History</NavLink>
                         <NavLink to='/help' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={handleMobile}>Help Center</NavLink>
-                        <a className='nav-tertiary-btn' href='https://app.prizepicks.com/login' target='_blank' rel='noreferrer'>Download The App</a>
+                        <a className='nav-tertiary-btn' href='https://apps.apple.com/us/app/prizepicks-fantasy-game/id1437843273' target='_blank' rel='noreferrer'>Download The App</a>
                    </div>
                 </div>
             </div>

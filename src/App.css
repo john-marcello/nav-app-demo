@@ -57,6 +57,13 @@ main, footer {
 
 /* media queries for mobile */
 @media (max-width: 1024px) {
+    .page-wrapper,
+    .nav-wrapper,
+    .main-wrapper,
+    .footer-wrapper {
+        padding: 2.25rem 3rem;
+    }
+
     .nav-container {
         grid-template-columns: auto auto;
     }
