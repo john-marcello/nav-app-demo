@@ -4,11 +4,19 @@ This project is intended for demonstration purposes only. The goal is to showcas
 
 ## TLDR
 
-This app demonstrates several UX/UI concepts and more advanced React methods like `useState`, `useEffect`, `useCallback`, and the `React Context API`. Data was accessed via an `Axios` get request and navigation is handled by `React Router DOM`. 
+This app demonstrates several UX/UI concepts and more advanced React methods like `useState`, `useEffect`, `useCallback`, `useMemo` and the `React Context API`. Data was accessed via an `Axios` get request and navigation is handled by `React Router DOM`. 
 
 The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were used, however at this time full responsiveness has not been implemented and there is not a mobile nav menu. The app is best viewed on a desktop/laptop browser.
 
-The **Home** page is a simple landing page and the **Where To Play** page has the interactive map. The **Meet The Players** page is used to demonstrate search functionality, and the **Search History** page is used to store the last 20 search queries using Context for state menagement. The **Help page** in a simple fun page with a message that matters.
+- Level I = The **Home** page is a simple landing page to show off some UX/UI skills utilizing HTML and CSS.
+
+- Level II = The **Where To Play** page has the interactive map to demostrate some basic state and tabbed browsing.
+
+- Level III = The **Meet The Players** page demonstrate to a data source and manipulating data. Search functionality is implemented with a debounce function. Local storage and session storage are used for persistance. 
+  
+- Level IV = The **Search History** page is used to store the last 20 search queries using the Context API for state menagement between two pages.
+
+- There is also a **Help page** which is a simple fun page with a message that matters.
 
 ## Run The App
 
@@ -125,7 +133,6 @@ The **Home** page is a simple landing page and the **Where To Play** page has th
       - Header.css
       - Help
       - Home.css
-      - Main.css
       - Players.css
       - SearchHistory.css
   - components
