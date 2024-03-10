@@ -1,66 +1,52 @@
 /* containers and hero */
 .home-wrapper {
     width: 100%;
-    max-width: 80rem;
+    max-width: 68rem;
     min-height: 100vh;
     padding-top: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
-
-}
-
-.home-subtext{
-    font-family: 'Encode Sans Expanded',Roboto, sans-serif;
-    font-size: 1.75rem;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: #adacb5;
-    position: relative;
-    margin: 0 auto;
-}
-
-.home-hero {
-    position: relative;
-    margin: 0 auto;
-}
-
-.hero-cash {
-    width: 11rem;
-    height: 11rem;
-    position: absolute;
-    bottom: -1.9rem;
-    left: 6.25rem;
 }
 
 .hero-text {
-    font-family: 'Encode Sans Expanded',Roboto, sans-serif;
-    font-size: 6.5rem;
-    font-weight: 800;
-    font-kerning: none;
-    line-height: 0.95;
-    letter-spacing: -0.1rem;
     text-transform: uppercase;
     margin: 0.5rem 0;
 }
 
-.block {
+.hero-cash {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    bottom: 9rem;
+    left: -23.5rem;
+    opacity: 0;
+    visibility: hidden;
+    animation: slideUp 1s ease-out 0.5s 1 forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+.hero-block {
     display: block;
 }
 
-.dollar-sign {
+.hero-dollar {
     color: #6eff00;
     margin-left: 0.3rem;
-    margin-right: -0.5rem;
-}
-
-.dollar-number-1 {
-    color: #6eff00;
-    margin-left: 0.3rem;
-    margin-right: -0.6rem;
-}
+    margin-right: -0.3rem;
+}       
 
 .home-divider {
     width: 100%;
@@ -69,14 +55,29 @@
     padding-bottom: 2rem;
 }
 
-.home-button {
+.btn-home {
     font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1;
     padding: 1rem 1.5rem;
-    background-color: #8000ff;
-    color: #fbf9ff;
-    text-align: center;
-    border-radius: 6px;
-    text-decoration: none;
+}
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+    
+    .hero-cash {
+        width: 6rem;
+        height: 6rem;
+        bottom: 5.75rem;
+        left: -14.5rem
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .hero-cash {
+        margin-bottom: 2rem;
+        bottom: 0;
+        left: 0;
+    }
+
 }

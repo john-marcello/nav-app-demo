@@ -64,8 +64,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 120ch;
-    height: 6.25rem;
+    max-width: 88ch;
+    min-height: 6.25rem;
+    text-align: center;
 }
 
 .available-disclaimer {

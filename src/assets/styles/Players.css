@@ -143,13 +143,13 @@
     color: #fbf9ff;
 }
 
-@media (min-width: 577px) {
+@media (min-width: 640px) {
     .players-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 767px) {
     .players-list {
         grid-template-columns: repeat(3, 1fr);
     }

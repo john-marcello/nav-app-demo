@@ -27,7 +27,7 @@
     z-index: 2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .encode-sans {
         font-size: 4rem;
     }
@@ -44,7 +44,7 @@
     letter-spacing: -0.2srem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .brick-accent {
         font-size: 8rem;
     }
