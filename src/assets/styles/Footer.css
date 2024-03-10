@@ -22,8 +22,9 @@
 
 /* footer middle column for copyright */
 .footer-credits {
+    color: #adacb5;
     text-align: center;
-    font-size: 1.2rem;
+    font-size:rem;
 }
 
 /* footer right column for atl logo */

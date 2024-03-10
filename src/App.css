@@ -49,9 +49,9 @@ main, footer {
 /* utilities */
 .line-divider {
     width: 100%;
-    margin-bottom: 2.25rem;
-    padding-bottom: 2.25rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     
 }
 
@@ -87,13 +87,35 @@ main, footer {
 
 /* global hero */
 
+.paragraph-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #adacb5;
+}
+
+.accent-text {
+    color: #adacb5;
+}
+
+.paragraph-text a {
+    color: deepskyblue;
+    text-decoration: none;
+}   
+
 .hero-text {
+    margin: 0.5rem 0;
     font-family: 'Encode Sans Expanded', Roboto, sans-serif;
     font-size: 6rem;
     font-weight: 800;
     font-kerning: none;
     line-height: 1;
     letter-spacing: -0.1rem;
+    text-align: center;
 }
 
 .hero-subtext {
@@ -106,7 +128,6 @@ main, footer {
     color: #adacb5;
 }
 
-
 /* media queries */
 @media (max-width: 1024px) {
     
@@ -117,11 +138,11 @@ main, footer {
     }
 
     .hero-text {
-        font-size: 3.75rem;
+        font-size: 3.75rem !important;
     }
 
     .hero-subtext {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
     }
     
 }
@@ -129,7 +150,7 @@ main, footer {
 @media screen and (max-width: 640px) {
     
     .hero-text {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
     }
 
 }

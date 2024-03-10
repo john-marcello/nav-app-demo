@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../assets/styles/Available.css';
-// Adjust the path as necessary to match your project structure
 import data from '../data/tabs.json';
 
 function Available() {
@@ -9,32 +8,32 @@ function Available() {
     return (
         <>
             <div className='available-container'>
-                <h1 className='available-hero'>PrizePicks is available in <span className='text-color-green'>32</span> States, Washington DC, and Canada</h1>
-                <div className='available-divider'></div>
-                <div className='tab-list'>
-                    {data.tabs.map((tab) => (
-                        <button
-                            key={tab.id}
-                            className={`button ${activeTab.id === tab.id ? 'button-active' : ''}`}
-                            onClick={() => setActiveTab(tab)}
-                        >
-                            {tab.alt}
-                        </button>
-                    ))}
+                <h1 className='hero-text hero-text-avail'>PrizePicks is available in <span className='available-green'>32</span> States, Washington DC, and Canada</h1>
+                <div className='available-block'>
+                    <div className='tab-list'>
+                        {data.tabs.map((tab) => (
+                            <button
+                                key={tab.id}
+                                className={`btn btn-tabs ${activeTab.id === tab.id ? 'btn-tabs-active' : ''}`}
+                                onClick={() => setActiveTab(tab)}
+                            >
+                                {tab.alt}
+                            </button>
+                        ))}
+                    </div>
                 </div>
-                <div className='available-divider'></div>
-                <div className='available-subtext'>
-                    <p className='text-description'>{activeTab.text}</p>
+
+                <div className='paragraph-text'>
+                    <p className='text-description'>{activeTab.text} <a target='_blank' rel='noopener noreferrer' href={`${activeTab.url}`}>Learn How To Play Here</a>.</p>
                 </div>
-                <div className='available-divider'></div>
-                <img
-                    className='availability-map'
-                    src={activeTab.image}
-                    alt={activeTab.alt}
-                />
-                <div className='bottom-divider'></div>
-                <p className='available-disclaimer'>*Available in all of Canada, except for Ontario.</p>
-                <div className='bottom-divider'></div>       
+                <div className='available-divider'>
+                    <img
+                        className='availability-map'
+                        src={activeTab.image}
+                        alt={activeTab.alt}
+                    />
+                    <p className='available-disclaimer'>*Available in all of Canada, except for Ontario.</p>
+                </div>    
             </div>
         </>
     );

@@ -8,7 +8,7 @@ function Home() {
             <div className='home-wrapper'>
                 <header className='hero-home'>
                     <p className='hero-subtext'>Daily Fantasy Made Easy</p> 
-                    <h1 className='hero-text'>
+                    <h1 className={'hero-text hero-text-home'}>
                         <span>get your first</span> 
                         <span className='hero-block'>deposit matched</span> up to 
                         <span className='hero-dollar'>&nbsp;$</span>
