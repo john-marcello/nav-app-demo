@@ -10,6 +10,7 @@
 .available-block {
     padding: 1rem 0;
     margin: 1rem 0;
+    text-align: center;
 }
 
 .available-green {
@@ -52,9 +53,12 @@
 }
 
 .paragraph-text {
-    max-width: 88ch;
-    padding-bottom: 4rem;
+    max-width: 64rem;    
     text-align: center;
+}
+
+.paragraph-text p {
+    min-height: 6.25rem;
 }
 
 .available-disclaimer {

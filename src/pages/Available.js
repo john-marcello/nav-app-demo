@@ -23,10 +23,10 @@ function Available() {
                     </div>
                 </div>
 
-                <div className='paragraph-text'>
+                <div className={'paragraph-text'}>
                     <p className='text-description'>{activeTab.text} <a target='_blank' rel='noopener noreferrer' href={`${activeTab.url}`}>Learn How To Play Here</a>.</p>
                 </div>
-                <div className='available-divider'>
+                <div className='available-block'>
                     <img
                         className='availability-map'
                         src={activeTab.image}

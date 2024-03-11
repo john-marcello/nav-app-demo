@@ -94,18 +94,17 @@ main, footer {
     font-family: Roboto, sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
-    line-height: 1.5;
-    color: #adacb5;
-}
-
-.accent-text {
-    color: #adacb5;
+    line-height: 1.25;
 }
 
 .paragraph-text a {
     color: deepskyblue;
     text-decoration: none;
-}   
+}
+
+.accent-text {
+    color: #adacb5;
+}
 
 .hero-text {
     margin: 0.5rem 0;
