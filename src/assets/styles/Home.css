@@ -1,14 +1,10 @@
 /* containers and hero */
 .home-wrapper {
-    width: 100%;
     max-width: 68rem;
-    min-height: 100vh;
-    padding-top: 1.5rem;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .hero-text-home {
+    font-size: 6rem;
     text-transform: uppercase;
 }
 
@@ -36,23 +32,11 @@
     }
 }
 
-
-.hero-block {
-    display: block;
-}
-
 .hero-dollar {
     color: #6eff00;
     margin-left: 0.3rem;
     margin-right: -0.3rem;
 }       
-
-.home-divider {
-    width: 100%;
-    border: 1px solid transparent;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-}
 
 .btn-home {
     font-size: 1.2rem;

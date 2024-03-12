@@ -59,13 +59,13 @@
     font-weight: 700;
     line-height: 1.5rem;
     letter-spacing: -0.01em;
-    color: white   ;
+    color: #fbf9ff; 
     padding: 0 6rem;
     text-transform: capitalize;
 }
 
 .number-list li {
-    color: white;
+    color: #fbf9ff;
     padding: 0 1rem 3rem;
     text-decoration: none;
 }

@@ -48,7 +48,7 @@
 }
 
 .nav-link.active {
-    color: white;
+    color: #fbf9ff;
 }
 
 .nav-link.active::before {
@@ -63,7 +63,7 @@
 }
 
 .nav-link:hover {
-    color: white;
+    color: #fbf9ff;;
 }
 
 /* right column for buttons */

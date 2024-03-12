@@ -5,12 +5,12 @@ import '../assets/styles/Home.css';
 function Home() {
     return (      
         <>
-            <div className='home-wrapper'>
+            <div className={'common-wrapper home-wrapper'}>
                 <header className='hero-home'>
-                    <p className='hero-subtext'>Daily Fantasy Made Easy</p> 
+                    <p className='hero-subtext color-grey'>Daily Fantasy Made Easy</p> 
                     <h1 className={'hero-text hero-text-home'}>
                         <span>get your first</span> 
-                        <span className='hero-block'>deposit matched</span> up to 
+                        <span className='block'>deposit matched</span> up to 
                         <span className='hero-dollar'>&nbsp;$</span>
                         <span className='hero-dollar'>1</span>
                         <span className='hero-dollar'>0</span>
@@ -24,7 +24,7 @@ function Home() {
                     />
                 </header>
                 <a className={'btn btn-primary btn-home'} href='/available'>Where To Play?</a>
-                <div className='home-divider'></div>
+                <div className='blank-divider'></div>
             </div>    
         </>
     );        

@@ -1,29 +1,19 @@
 /* header styles */
 
-.available-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+.available-wrapper {
+    max-width: 80rem;  
 }
 
-.available-block {
-    padding: 1rem 0;
-    margin: 1rem 0;
-    text-align: center;
-}
-
-.available-green {
-    color: #6eff00;
-}
-
-.hero-text {
+.hero-text-avail {
     font-size: 3.75rem;
 }
 
-/* tabs */
 
-  
+.color-green {
+    color: #6eff00;
+}
+
+/* tabs */  
 .tab-list {
     display: flex;
     justify-content: center;
@@ -48,17 +38,13 @@
 .availability-map {
     height: 100%;
     width: 100%;    
-    max-width: 70rem;
     padding-bottom: 4rem;
 }
 
-.paragraph-text {
-    max-width: 64rem;    
-    text-align: center;
-}
-
 .paragraph-text p {
+    max-width: 80ch;    
     min-height: 6.25rem;
+    padding-bottom: 2rem;
 }
 
 .available-disclaimer {
@@ -67,20 +53,6 @@
     text-align: center;
     padding-bottom: 6.25rem;
     
-}
-
-.available-divider {
-    border-bottom: 1px solid transparent;
-    width: 100%;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-}
-
-.bottom-divider {
-    border-bottom: 1px solid transparent;
-    width: 100%;
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
 }
 
 /* media queries */

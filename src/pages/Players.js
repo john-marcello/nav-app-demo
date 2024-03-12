@@ -93,6 +93,7 @@ function Players() {
 
 
     // handle the cancel search button and clear state
+    const [isFocused, setFocused] = useState(false);
     const handleCancel = () => {setSearchQuery('');};
 
     // if (data.isLoading) return <div>Loading...</div>;
@@ -101,14 +102,20 @@ function Players() {
 
     // render the players list or shows a no results found
 return (
-    <div className='players-container'>
+    <div className={'common-wrapper players-wrapper'}>
         <div className='search-row'>
-            <div className='search-header'>
-                <div className='search-subtext'>Search by player, market, team, or position</div>
-                <div className='search-subtext'>
-                <NavLink to='/search-history' className={({ isActive }) => isActive ? 'active' : 'sub-link'}>View Search History</NavLink>                    </div>
+            <div className={'search-column search-nav'}>
+                <div className='paragraph-text search-text color-grey'>Search by Player, Market, Team, or Position</div>
+                <div className='search-text'>
+                    <NavLink 
+                        to='/search-history' 
+                        className={({ isActive }) => isActive ? 'active' : 'sub-link'}
+                    >
+                        View Search History
+                    </NavLink>
+                </div>
             </div>
-            <div>
+            <div className='search-column'>
                 <div className='search-bar'>
                     <div className='search-wrapper'>
                         <div className='search-icon'>
@@ -124,23 +131,29 @@ return (
                                 id="search"
                                 placeholder='Search'
                                 type='text'
+                                autoComplete='off'
                                 value={searchQuery}
                                 onChange={handleSearchChange}
+                                onFocus={() => setFocused(true)}
+                                onBlur={() => setFocused(false)}
                             />
                         </div>
                     </div>
-                    <div className='cancel' onClick={handleCancel}>Cancel</div>
+                    {isFocused && (
+                        <div className='cancel' onClick={handleCancel}>Cancel</div>
+                    )}
                 </div>
             </div>
         </div>
+        <div className='line-divider'></div>
         {filteredPlayers.length > 0 ? (
             <ul className='players-list'>
                 {filteredPlayers.map((player, index) => (
                     <li className='players-item' key={index}>
                         <div className='player-container'>
                             <div className='player-contents'>
-                                <button className='last-five-button'>
-                                    <div className='last-five-container'>
+                                <button className='btn-five'>
+                                    <div className='btn-five-box'>
                                         <svg
                                             width='25'
                                             height='24'

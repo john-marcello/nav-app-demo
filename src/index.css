@@ -10,11 +10,11 @@ html {
     }   
 }
 
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1180px) {
     html {
         font-size: calc(0.6876951092611863rem + 0.20811654526534862vw);
         }
-    }
+    } */
 
 body {
     -webkit-font-smoothing: antialiased;

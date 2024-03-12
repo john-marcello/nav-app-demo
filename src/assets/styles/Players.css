@@ -1,78 +1,71 @@
 /* grid for players container */
 
-.players-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+.players-wrapper {
+    max-width: 80rem;
 }
 
-/* search row and search bar */
+
+/* search row and columns */
 
 .search-row {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 60% 40%;
-    gap: 1.2rem;
-    border-bottom: 1px solid #2c2c39;
-    margin-bottom: 2rem;
-    padding-bottom: 0.8rem;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 20px;
     width: 100%;
 }
 
-.search-subtext {
-    display: inline-block;
-    font-family: Roboto, sans-serif;
+.search-column {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.search-column:last-child {
+    justify-content: end;
+}
+
+
+/* left column */
+.search-text {
+    padding-right: 0.5rem;
+    font-family: 'Encode Sans Expanded', Roboto, sans-serif;
     font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5rem;
-    letter-spacing: -0.01em;
-    color: rgb(255, 246, 0);
-    padding-right: 0.75rem;
-    margin: 0.75rem 0.75rem 0.75rem 0;
-    text-transform: capitalize;
+    font-weight: 500;
 }
 
-.search-subtext:first-child {
-    border-right: 1px solid rgb(255, 246, 0);
-}
-
-.search-subtext a {
-    color: rgb(255, 246, 0);
+.search-text a {
+    padding-left: 0.5rem;
+    border-left: 1px solid #adacb5;
+    color: #adacb5;
     text-decoration: none;
 }
 
-.search-subtext a:hover {
-    color: #8000ff;
-    text-decoration: underline;
+.search-text a:hover {
+    color: deepskyblue;
 }
 
+/* right column */
 .search-bar {
     display: flex;
+    width: 100%;
+    height: 40px;
 }
 
 .search-wrapper {
-    position: relative;
-    margin: 0 0 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0px 1rem;
     display: flex;
     justify-content: left;
-    height: 3rem;
+    width: 100%;
+    padding: 0 0.5rem;
     background-color: rgb(18, 19, 32);
     border: 1px solid rgb(44, 44, 57);
     border-radius: 0.5rem !important;
 }
 
 .search-icon {
-    height: 100%;
-    pointer-events: none;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
+    height: 100%;
 }
 
 .search-icon svg {
@@ -81,53 +74,36 @@
 
 .search-input {
     display: inline-flex;
-    -webkit-box-align: center;
     align-items: center;
-    padding: 0 1rem;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    letter-spacing: 0.01rem;
-    color: rgba(0, 0, 0, 0.90);
-    cursor: text;
-    position: relative;
     width: 100%;
+    padding-left: 0.5rem;
+    color: #adacb5;
+    cursor: text;
+
 }
 
 .search-input input {
-    -webkit-tap-highlight-color: transparent;
-    display: block;
-    min-width: 0px;
+    display: block;       
     width: 100%;
-    height: 1.4rem;
-    padding: 0.5rem;
-    margin: 0;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.01rem;
     color: #fbf9ff;
+    background-color: rgb(18, 19, 32);
     border: 0px;
     box-sizing: content-box;
-    background: none;
-    animation-name: mui-auto-fill-cancel;
-    animation-duration: 10ms;
 }
 
 .cancel {
     -webkit-box-align: center;
     display: flex;
     align-items: center;
-    height: 3rem;
-    margin: 0 1rem 1rem;
-    font-family: Roboto, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 700;
+    margin: 0 1rem;
+    font-family: 'Encode Sans Expanded', Roboto, sans-serif;
+    font-weight: 600;
     color: rgb(255, 246, 0);
     cursor: pointer;
 }
 
-/* grid for players list & media queries */
+
+/* grid for players list & item cards */
 .players-list {
     display: grid;
     grid-template-rows: auto auto;
@@ -135,33 +111,12 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.1rem;
     line-height: 1.5rem;
-    letter-spacing: -0.01em;
-    color: #fbf9ff;
+    letter-spacing: 0;
+
 }
 
-@media (min-width: 640px) {
-    .players-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 767px) {
-    .players-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1180px) {
-    .players-list {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* player list item cards */
 .players-item {
     display: flex;
     flex-direction: column;
@@ -170,9 +125,6 @@
     background-color: #121320;
     border-radius: 1rem;
     border: 3px solid #2c2c39;
-    box-sizing: border-box;
-    transition: border-color 0.06s ease-in-out;
-    text-align: center;
     position: relative;
     list-style: none;
 }
@@ -180,12 +132,12 @@
 .player-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
 }
 
+
 /* last five feature */
-.last-five-button {
+.btn-five {
     position: absolute;
     left: 1rem;
     top: 1rem;
@@ -195,57 +147,52 @@
     border: none;
 }
 
-.last-five-container svg {
+.btn-five-box svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.player-divider {
-    padding: 0.5rem;
-}
 
-/* player image, name, team, position */
+/* player profiles */
+
 .player {
+    padding-bottom: 1rem;
     width: 100%;
 }
 
 .player-image {
+    width: auto;
     height: 8rem;
+    max-width: 8rem;
     min-height: 8rem;
     margin: 0 auto 1.5rem;
-    width: auto;
-    max-width: 8rem;
+    
 }
 
-.player-name {
-    font-size: 1rem;
-    padding-bottom: 0.1rem;
-}
-
-.player-team {
-    font-size: 1rem;
-    font-weight: 500;
+.player-name,
+.player-team,
+.player-position {
+    padding-bottom: 0.3rem;
 }
 
 .player-position {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 0.5rem 0;
 }
 
+
+/* projected score */
 .projected-score {
     display: flex;
-    align-items: baseline;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 3.5rem;
-    height: 3.5rem;
+    height: 4rem;
     width: 100%;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 0;
     padding: 0.5rem 0;
-    background-color: #111;
+    background-color: #050614;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
@@ -257,25 +204,25 @@
 }
 
 .projected-divider {
-    border: 0.09rem dashed #fff600;
-    height: 40%;
+    border: 0.2rem dashed #fff600;
+    height: 68%;
     margin: 0 10px;
 }
 
-/* point, more, or less */
 .points {
     font-weight: 700;
     vertical-align: middle;
-    line-height: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
+/* more-less buttons */
 .more-less {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
-    line-height: 1.4rem;
+    font-family: 'Encode Sans Expanded', Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
     position: relative;
     bottom: 0;
     left: 0;
@@ -288,15 +235,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     margin: 0;
-    color: #c7c6ce;
+    color: #adacb5;
     background-color: transparent !important;
     border: none;
     border-top: 1px solid #2c2c39;
-    font-weight: 400;
     position: relative;
     overflow: hidden;
     transition: border 0.05s ease-in-out;
@@ -346,16 +291,41 @@
 }
 
 .not-found h1 {
-    font-family: Roboto, sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
-    line-height: 2remm;
+    padding-bottom: 0.5rem;
     letter-spacing: -0.01em;
 }
 
 .not-found span {
     color: #aaaaaa;
-    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 20px;
+}
+
+/* media queries */
+
+@media (min-width: 640px) {
+   
+    .players-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 767px) {
+   
+    .players-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (min-width: 1180px) {
+   
+    .players-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }

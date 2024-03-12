@@ -7,9 +7,9 @@ function Available() {
 
     return (
         <>
-            <div className='available-container'>
-                <h1 className='hero-text hero-text-avail'>PrizePicks is available in <span className='available-green'>32</span> States, Washington DC, and Canada</h1>
-                <div className='available-block'>
+            <div className={'common-wrapper available-wrapper'}>
+                <h1 className='hero-text hero-text-avail'>PrizePicks is available in <span className='color-green'>32</span> States, Washington DC, and Canada</h1>
+                <div className='vertical-block'>
                     <div className='tab-list'>
                         {data.tabs.map((tab) => (
                             <button
@@ -22,8 +22,7 @@ function Available() {
                         ))}
                     </div>
                 </div>
-
-                <div className={'paragraph-text'}>
+                <div className={'paragraph-text color-grey'}>
                     <p className='text-description'>{activeTab.text} <a target='_blank' rel='noopener noreferrer' href={`${activeTab.url}`}>Learn How To Play Here</a>.</p>
                 </div>
                 <div className='available-block'>
