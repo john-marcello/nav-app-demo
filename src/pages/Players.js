@@ -13,6 +13,8 @@ function Players() {
 
     // set state for players data, loading state, error state
     const [data, setData] = useState({ players: [], isLoading: true, error: '', });
+    const [isFocused, setIsFocused] = useState(false);
+
 
     // fetch data source from JSON file via axios request and prevent re-renders
     useEffect(() => {
@@ -50,6 +52,8 @@ function Players() {
     // set state to track the search query and invoke context hook
     const [searchQuery, setSearchQuery] = useState(initialSearchQuery);
     const { addSearchQuery } = useSearch();
+
+    
 
     // filter players by search query input, and access positionMapping object for position attribute
     const filteredPlayers = useMemo(() => data.players.filter(player => {
@@ -93,14 +97,16 @@ function Players() {
 
 
     // handle the cancel search button and clear state
-    const [isFocused, setFocused] = useState(false);
-    const handleCancel = () => {setSearchQuery('');};
-
+    const handleCancel = () => { 
+        setSearchQuery('');
+        isFocused && setIsFocused(false);
+    };
+    
     // if (data.isLoading) return <div>Loading...</div>;
     if (data.error) return <div>{data.error}</div>;
 
 
-    // render the players list or shows a no results found
+// render the players list or shows a no results found
 return (
     <div className={'common-wrapper players-wrapper'}>
         <div className='search-row'>
@@ -134,15 +140,13 @@ return (
                                 autoComplete='off'
                                 value={searchQuery}
                                 onChange={handleSearchChange}
-                                onFocus={() => setFocused(true)}
-                                onBlur={() => setFocused(false)}
+                                onFocus={() => setIsFocused(true)}
+                                onBlur={() => console.log('search input NOT focused')}
                             />
                         </div>
                     </div>
-                    {isFocused && (
-                        <div className='cancel' onClick={handleCancel}>Cancel</div>
-                    )}
                 </div>
+                <div className={`${!isFocused ? 'cancel-hide' : 'cancel'}`} onClick={handleCancel}>Cancel</div>
             </div>
         </div>
         <div className='line-divider'></div>

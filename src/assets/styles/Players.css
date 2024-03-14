@@ -18,10 +18,10 @@
 .search-column {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .search-column:last-child {
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 
@@ -100,6 +100,10 @@
     font-weight: 600;
     color: rgb(255, 246, 0);
     cursor: pointer;
+}
+
+.cancel-hide {
+    display: none;
 }
 
 
