@@ -1,18 +1,16 @@
 # PrizePicks Clone
 
-This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Many areas could be refactored to be more DRY, particularly in the css files, however that work can be saved for later. Right now the most important outcome is to deliver a working demo.
+This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Some improvement have been made to optimize css files, add a mobile menu, and improve mobile responsiveness.
 
 ## TLDR
 
-This app demonstrates several UX/UI concepts and more advanced React methods like `useState`, `useEffect`, `useCallback`, `useMemo` and the `React Context API`. Data was accessed via an `Axios` get request and navigation is handled by `React Router DOM`. 
+This app demonstrates several UX/UI concepts and more advanced React methods like `useState`, `useEffect`, `useCallback`, `useMemo` and the `React Context API`. Data was accessed via an `Axios` get request and navigation is handled by `React Router DOM`. The app is naturally mobile responsive and utilizes both `CSS Grid` and `Flexbox`.
 
-The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were used, however at this time full responsiveness has not been implemented and there is not a mobile nav menu. The app is best viewed on a desktop/laptop browser.
-
-- Level I = The **Home** page is a simple landing page to show off some UX/UI skills utilizing HTML and CSS.
+- Level I = The **Home** page is a simple landing page to show off some UX/UI skills utilizing HTML and CSS. An animation was added here using keyframes.
 
 - Level II = The **Where To Play** page has the interactive map to demostrate some basic state and tabbed browsing.
 
-- Level III = The **Meet The Players** page demonstrate to a data source and manipulating data. Search functionality is implemented with a debounce function. Local storage and session storage are used for persistance. 
+- Level III = The **Meet The Players** page demonstrates connecting to a data source and manipulating data. Search functionality is implemented with a debounce function.
   
 - Level IV = The **Search History** page is used to store the last 20 search queries using the Context API for state menagement between two pages.
 
@@ -103,7 +101,13 @@ The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were u
 
 - An event handler was added to the cancel button click to clear the search query state.
 
-- The filter was enhanced to filter the players based on the search query input
+- The filter was enhanced to filter the players based on the search query input.
+
+-  An additional helper function was impleneted to generate a random number for the points data attribute.
+
+-  React Context API is used to store and share the search history. Local storage is used to preserve the search history when the browser is refreshed.
+
+-  Session storage is used for persisting the points across the session. When the session is closed the points data resets.
 
 **Search History Page**
 - A `SearchContext` file was implemented to `createContext` with a custom hook and set up a `SearchProvider` that wraps the app with the search content.
@@ -147,6 +151,10 @@ The site is relatively mobile responsive because `CSS Grid` and `Flexbox` were u
     - Home.js
     - Players.js
     - SearchHistory.js
+  - utils
+    - debounce.js
+    - positionMapping.js
+    - randomNumber.js
   - App.js
   - App.css
   - index.js
