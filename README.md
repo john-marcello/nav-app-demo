@@ -1,6 +1,6 @@
 # PrizePicks Clone
 
-This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Some improvement have been made to optimize css files, add a mobile menu, and improve mobile responsiveness.
+This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Recent changes include updating code to connect to a Ruby backend running Roda, and a postgreSQL database.
 
 ## Branches
 
@@ -11,9 +11,9 @@ This project is intended for demonstration purposes only. The goal is to showcas
 
 - `develop` was added to be as a branch to test and stage futures changes.
  
-- `data-local` was created to preserve the initially implementation which utilizes locally stored data.
+- `data-local` was created to preserve the initial implementation thatr utilizes locally stored data.
 
-- `data-ruby` is a back up created to preserve the initial implementation that connects to a ruby back-end
+- `data-ruby` is a back up created to preserve the initial implementation that connects to a ruby back-end.
 
 ## TLDR
 
