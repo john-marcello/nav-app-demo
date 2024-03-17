@@ -86,11 +86,13 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 ## Pages and State Management
 
 **Home Page**
+
 - This Home page acts primarily as a static landing page and estalblishes the visual design of the app
 
 - Some links (e.g. Sign Up & Login) lead off site to [https://app.prizepicks.com/](https://app.prizepicks.com/) for demo puposes.
 
 **Available Page**
+
 - The Available page maps the tabs array to create a list of buttons, which can toggle the map image and text description content.
 
 - The `activeTab` and `setActiveTab` state is initialized to set the active tab to the first tab initial load.
@@ -98,6 +100,7 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 - An `onClick` event handler is triggered when a tab button is click which updates the state and set a dynamic css class to the active tab.
 
 **Players Page**
+
 - `useState` is utilized to set up state to track the player's data, loading state, and error state.
 
 - `useState` is also utilized to set up state to track the search query.
@@ -106,7 +109,7 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 
 - Some logic was added to get current location and create a new object to extract the query parameter from the search string.
 
--`useEffect` is utilized  to update the search query state when the location changes.
+- `useEffect` is utilized  to update the search query state when the location changes.
 
 - A debounce function was added so that search history only get tracked after a 2 second pause in the input field.
 
@@ -123,6 +126,7 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 -  Session storage is used for persisting the points across the session. When the session is closed the points data resets.
 
 **Search History Page**
+
 - A `SearchContext` file was implemented to `createContext` with a custom hook and set up a `SearchProvider` that wraps the app with the search content.
 
 - This helps search queries registered on the `Players.js` to be stored in the `SearchHistory.js` page. The most recent 20 search strings are stored.
@@ -132,9 +136,11 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 - Clicking a link on the `SearchHistory.js` page drives the user back to the `Players.js` page and loads the historical search params.
 
 **Help Page**
+
 - A simple help page was added with a fun message and an embedded video using `react-youtube`.
 
 ## Directory Structure
+
 -public
   - index.html
   -  data.json
