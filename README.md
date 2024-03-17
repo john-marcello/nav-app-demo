@@ -2,6 +2,19 @@
 
 This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Some improvement have been made to optimize css files, add a mobile menu, and improve mobile responsiveness.
 
+## Branches
+
+- `main`
+  - Code base was refactored to connect to a simple Ruby back-end running Roda.
+  - A postgreSQL database was created locally and a python migration script was added to transfer the data in `data.json` to the DB
+  - Player.js file was refactored to abstract some code to custom hooks or stand alone components
+
+- `develop` was added to be as a branch to test and stage futures changes.
+ 
+- `data-local` was created to preserve the initially implementation which utilizes locally stored data.
+
+- `data-ruby` is a back up created to preserve the initial implementation that connects to a ruby back-end
+
 ## TLDR
 
 This app demonstrates several UX/UI concepts and more advanced React methods like `useState`, `useEffect`, `useCallback`, `useMemo` and the `React Context API`. Data was accessed via an `Axios` get request and navigation is handled by `React Router DOM`. The app is naturally mobile responsive and utilizes both `CSS Grid` and `Flexbox`.
