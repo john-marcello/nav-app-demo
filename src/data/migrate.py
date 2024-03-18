@@ -66,7 +66,7 @@ def main():
     conn.commit()
 
     # Load your JSON data
-    with open('src/data.json') as f:
+    with open('src/data/data.json') as f:
         data = json.load(f)
 
     # Iterate through the JSON data and insert into the database
