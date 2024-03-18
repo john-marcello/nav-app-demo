@@ -1,19 +1,21 @@
 # PrizePicks Clone
 
-This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Recent changes include updating code to connect to a Ruby backend running Roda, and a postgreSQL database.
+This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Recent changes include updating code to connect to a Ruby backend running Roda, and a PostgreSQL database.
 
 ## Branches
 
-- `main`
-  - Code base was refactored to connect to a simple Ruby back-end running Roda.
-  - A postgreSQL database was created locally and a python migration script was added to transfer the data in `data.json` to the DB
-  - Player.js file was refactored to abstract some code to custom hooks or stand alone components
+- `main` represents our source of truth for the most up to date version intended for production.
 
-- `develop` was added to be as a branch to test and stage futures changes.
+- `develop` was added to be as a default branch to test and stage futures changes and connects to the Ruby backend.
+
+  - Todo: Upload Ruby backend to separate GitHub repo.
+  
+  - Todo: Update documentation to include running the back-end
  
-- `data-local` was created to preserve the initial implementation thatr utilizes locally stored data.
+  - Todo: Update documentation to include how to run the Python migration file for the PostgreSQL DB.
+ 
+- `data-local` was created to preserve the initial implementation that utilizes locally stored data.
 
-- `data-ruby` is a back up created to preserve the initial implementation that connects to a ruby back-end.
 
 ## TLDR
 
