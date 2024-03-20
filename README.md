@@ -1,6 +1,6 @@
 # PrizePicks Clone
 
-This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Recent changes include updating code to connect to a Ruby backend running Roda, and a PostgreSQL database.
+This project is intended for demonstration purposes only. The goal is to showcase my front-end design and development skills utilizing the React framework. Recent changes include updating code to connect to a Ruby backend running Roda, and a PostgreSQL database. This week a basic Docker file was set up to prepare being able to deploy the project to AWS.
 
 ## Branches
 
@@ -14,7 +14,13 @@ This project is intended for demonstration purposes only. The goal is to showcas
  
   - Todo: Update documentation to include how to run the Python migration file for the PostgreSQL DB.
  
+  - Todo: Some mobile responsiveness on the searh history and help pages.
+ 
+  - Todo: Deploy to AWS ECS using Fargate with AWS Co-Pilot CLI
+ 
 - `data-local` was created to preserve the initial implementation that utilizes locally stored data.
+
+- `add-docker` was created to implenent a Docker file and shell scripts that build an image and deployed it to a container.
 
 
 ## TLDR
@@ -35,9 +41,23 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 
 - Fork or clone the repo to your local environment.
   
-- In the project directory, run `npm start` to start the app in the development mode.
+- `run locally`
+
+  - In the project directory, run `npm start` to start the app in the development mode.
+ 
+- `run docker`
+
+  - In the project directory run ./docker-build-sh to build the image.
+
+  - In the project directory run ./docker-run-sh to deploy the image and run the container.
+ 
+  - A bind mount was added so that the docker container can be used for live previewing during development
   
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+  - Note that both local and docker implementation can each run on port 3000.
+
+  - As such you exit from one in order to run the other.
   
 - The page will reload when you make changes. You may also see any lint errors in the console.
   
@@ -144,10 +164,11 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
 ## Directory Structure
 
 -public
-  - index.html
   -  data.json
-  -  reset.css
   -  favicon.ico
+  -  index.html
+  -  manifest.json
+  -  reset.css
 - src
   - assets
     - images
@@ -162,10 +183,19 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
       - SearchHistory.css
   - components
     - Footer.js
-    - HeadereoEmbed.js
-    - Vid
+    - Header.js
+    - PlayerItem.js
+    - SearchBar.js
+    - VideoEmbed.js
   - context
     - SearchContext.js
+  - data
+    - data.json
+    - migrate.py
+    - tabs.json
+  - hooks
+    - usePlayerData.js
+    - useSearchParams.js 
   - pages
     - Available.js
     - Help.js
@@ -180,5 +210,12 @@ This app demonstrates several UX/UI concepts and more advanced React methods lik
   - App.css
   - index.js
   - index.css
+  - .nvmrc
+  - docker-build.sh
+  - docker-run.sh
+  - dockerfile
+  - package-lock.json
+  - package.json
+  - README.md
 
 
